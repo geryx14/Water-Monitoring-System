@@ -1,0 +1,3034 @@
+[
+    {
+        "id": "69bbeba1be5c84a3",
+        "type": "tab",
+        "label": "3 Phasa",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ee0f0338bacecc64",
+        "type": "tab",
+        "label": "1 Phasa",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bf6e94386824515c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ad1d688b4c270311",
+        "type": "tab",
+        "label": "Monitoring",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5e4b7d830ab33aac",
+        "type": "tab",
+        "label": "TABEL",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1575464466fc78c7",
+        "type": "tab",
+        "label": "Setting",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "97fec28436413c7c",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "cb2ba630ce818929",
+        "type": "postgreSQLConfig",
+        "name": "Local Database",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "Ultrasonic Read",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "12345",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "1f90e14f92c8adab",
+        "type": "mqtt-broker",
+        "name": "Simulasi",
+        "broker": "192.168.0.194",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ef7eb3c9edc3a111",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#f1f1f1",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#c7c7c7",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#f1f1f1",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#ffffff",
+                    "value": "#f1f1f1",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#f1f1f1",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#f1f1f1",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#f1f1f1",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial Black,Arial Black,Gadget,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "PT PINDAD - Pemantauan ",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 30,
+                "sy": 60,
+                "gx": 2,
+                "gy": 0,
+                "cx": 1,
+                "cy": 0,
+                "px": 2,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e0f204b812109e2d",
+        "type": "mqtt-broker",
+        "name": "Localhost",
+        "broker": "192.168.0.194",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5267b29479b6f319",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "192.168.220.106",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "db_monar",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "PindadMagang2024!",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "dd314d38815a1dcb",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "192.168.220.106",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "monar_db",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "PindadMagang2024!",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "f671d60d5efe1414",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.150",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a068bff3037561c9",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "192.168.220.106",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "db_monar",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "PindadMagang2024!",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "fd61ab8632c0bcd9",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "192.168.220.106",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "monar_db",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "PindadMagang2024!",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "134b8a66154c8fb4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "hive.mq",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c29e602eca66c2a1",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.150",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e9d938e960948123",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.150",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6cf31179cd0f92ea",
+        "type": "ui_tab",
+        "name": "PENGATURAN",
+        "icon": "settings",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "85e3da5ffb6a1005",
+        "type": "ui_group",
+        "name": "setting air bersih",
+        "tab": "6cf31179cd0f92ea",
+        "order": 1,
+        "disp": false,
+        "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1d6074d5dac65b3d",
+        "type": "ui_group",
+        "name": "cardAir",
+        "tab": "896f10a7ebf97ced",
+        "order": 1,
+        "disp": false,
+        "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "896f10a7ebf97ced",
+        "type": "ui_tab",
+        "name": "MONITORING",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8aba0b9cb46fac97",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "192.168.220.106",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "db_monar",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "PindadMagang2024!",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "c90da4cfb3d2fe34",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "",
+        "hostFieldType": "str",
+        "port": "",
+        "portFieldType": "num",
+        "database": "",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "",
+        "userFieldType": "str",
+        "password": "",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "cf223f014f6a6cec",
+        "type": "ui_group",
+        "name": "Tabel Air Bersih",
+        "tab": "fcbbf04acb429e3d",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fcbbf04acb429e3d",
+        "type": "ui_tab",
+        "name": "TABEL",
+        "icon": "reorder",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c366beba67f4fcf5",
+        "type": "ui_group",
+        "name": "Tabel Air Kotor",
+        "tab": "fcbbf04acb429e3d",
+        "order": 2,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3d1b970daa2d8f07",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "hive.mq",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "90826d99abfa084e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.194",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b663e618975963d5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.194",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "43176807a7c18b51",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.194",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "56dff3567d1bef59",
+        "type": "telegram bot",
+        "botname": "Watermon123bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "addressfamily": "",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "cd062f4d587b25c2",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "midnight-red",
+                "default": "#4B7930",
+                "baseColor": "#df2a60",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#d1f1f5",
+                    "value": "#df2a60",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#161d6f",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#0b2f9f",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#161d6f",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#df2a60",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "MONAR PT. PINDAD",
+            "hideToolbar": "false",
+            "allowSwipe": "menu",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "23df9728f7df1c20",
+        "type": "ui_group",
+        "name": "KOLAM AIR BERSIH",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6e2864e3e3f9e505",
+        "type": "ui_group",
+        "name": "KOLAM AIR KOTOR",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3376e82ec4093323",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "c24b5db442294685",
+        "order": 2,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "7ad3405b9732440b",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "c24b5db442294685",
+        "order": 3,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "60293fbd048b5fec",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "c24b5db442294685",
+        "order": 4,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "d45897bd9760fb14",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "c24b5db442294685",
+        "order": 5,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "c610cf4e7e02b94b",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "c24b5db442294685",
+        "order": 6,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "30f2955bda9dde2d",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "c24b5db442294685",
+        "order": 7,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "2c87d1092410834d",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "c24b5db442294685",
+        "order": 8,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "fc4c9c7ad3915e44",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "c24b5db442294685",
+        "order": 9,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "772641ab9a768795",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "",
+        "order": 2,
+        "width": 34,
+        "height": 1
+    },
+    {
+        "id": "4563884b2a4b92e8",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "",
+        "order": 3,
+        "width": 34,
+        "height": 1
+    },
+    {
+        "id": "84558b64b4dc0d31",
+        "type": "ui_group",
+        "name": "Grafik",
+        "tab": "896f10a7ebf97ced",
+        "order": 2,
+        "disp": false,
+        "width": 26,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "572ad5e6c53b6154",
+        "type": "ui_group",
+        "name": "setting air kotor",
+        "tab": "6cf31179cd0f92ea",
+        "order": 2,
+        "disp": false,
+        "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "db9f74ab42389c01",
+        "type": "ui_group",
+        "name": "cardAir",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "abbd9df51aefc08e",
+        "type": "ui_group",
+        "name": "Grafik",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2641558e21134ad3",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a5466e7af043222e",
+        "type": "ui_group",
+        "name": "Tabel Air Bersih",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "843134fc4e6a415a",
+        "type": "ui_group",
+        "name": "Tabel Air Kotor",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7c1d18cd1f710da6",
+        "type": "ui_group",
+        "name": "Tabel Air Bersih",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0a8a58a3dcb12811",
+        "type": "ui_group",
+        "name": "Tabel Air Kotor",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eb0212407027814d",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "345b0aef30a478b2",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "18e251bde48d39c8",
+        "type": "ui_group",
+        "name": "air bersih",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9f11972e772e9c3b",
+        "type": "ui_group",
+        "name": "air kotor",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a6a01789d7dcdb63",
+        "type": "ui_group",
+        "name": "AIR KOTOR",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "71520e3484f61530",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ba2cb0824e719ad3",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "1d6074d5dac65b3d",
+        "order": 7,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "04e392612cd56733",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "1d6074d5dac65b3d",
+        "order": 8,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "b150ac09453d458f",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "1d6074d5dac65b3d",
+        "order": 9,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "45dda5aca9d35c11",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "1d6074d5dac65b3d",
+        "order": 10,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "d8ad2913c0f229a6",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "1d6074d5dac65b3d",
+        "order": 11,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "d1207a9b72250fb4",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "1d6074d5dac65b3d",
+        "order": 12,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "b321cc64518f4288",
+        "type": "ui_spacer",
+        "z": "ad1d688b4c270311",
+        "name": "spacer",
+        "group": "1d6074d5dac65b3d",
+        "order": 13,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "543584a8c1b32a58",
+        "type": "ui_spacer",
+        "z": "5e4b7d830ab33aac",
+        "name": "spacer",
+        "group": "cf223f014f6a6cec",
+        "order": 2,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "16844794e4ad5e35",
+        "type": "ui_spacer",
+        "z": "5e4b7d830ab33aac",
+        "name": "spacer",
+        "group": "cf223f014f6a6cec",
+        "order": 3,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "9016687b80491616",
+        "type": "ui_spacer",
+        "z": "5e4b7d830ab33aac",
+        "name": "spacer",
+        "group": "cf223f014f6a6cec",
+        "order": 4,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "9e1f749453b940de",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 3,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "3796811082cdbde1",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 10,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "0ab988988546f356",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 11,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "f3835bcc0d5d6a88",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 12,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "35d765fc74904c3b",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 13,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "b01a2c9b86165812",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 15,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "af0d4e7ce7e4513b",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 16,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "0b80b4b9219a304e",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 17,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "bf8872391ce6c97e",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 18,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "a6347a3c043e174a",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 19,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "3ad8f854471e5fbb",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 21,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "1f5db8ff08225541",
+        "type": "ui_spacer",
+        "z": "1575464466fc78c7",
+        "name": "spacer",
+        "group": "85e3da5ffb6a1005",
+        "order": 22,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "49b0cc186bfe9316",
+        "type": "telegram bot",
+        "botname": "Watermon123bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "addressfamily": "",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "0ddd6316a73dbc42",
+        "type": "telegram client config",
+        "botname": "",
+        "verboselogging": false,
+        "loginmode": "bot",
+        "useproxy": false,
+        "usewss": false,
+        "devicemodel": "",
+        "systemversion": "",
+        "appversion": "",
+        "host": "",
+        "sockstype": "5",
+        "port": "6667",
+        "username": "anonymous",
+        "password": "",
+        "secret": "",
+        "mtproxy": false,
+        "timeout": "2"
+    },
+    {
+        "id": "516a25de3d121ab1",
+        "type": "postgresql",
+        "z": "69bbeba1be5c84a3",
+        "name": "abs",
+        "query": "",
+        "postgreSQLConfig": "cb2ba630ce818929",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 850,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c82939e01297896d",
+        "type": "mqtt in",
+        "z": "69bbeba1be5c84a3",
+        "name": "",
+        "topic": "monitoringenergy/simulation",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "1f90e14f92c8adab",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "96ed90ad2f1dc4f6",
+                "d4705bd6c4c4d6c2",
+                "1a88ef1668ddf77f",
+                "14a3f6a4541e73f3",
+                "2dbba4737ffdaa14"
+            ]
+        ]
+    },
+    {
+        "id": "2dbba4737ffdaa14",
+        "type": "function",
+        "z": "69bbeba1be5c84a3",
+        "name": "function 25",
+        "func": "// Mengambil payload sebagai objek JSON\nlet data = msg.payload;\n\n// Parsing nilai dari JSON dan menghapus satuan secara spesifik\nlet V1 = parseFloat(data.V1.replace(\" V\", \"\").trim());\nlet V2 = parseFloat(data.V2.replace(\" V\", \"\").trim());\nlet V3 = parseFloat(data.V3.replace(\" V\", \"\").trim());\n\nlet I1 = parseFloat(data.I1.replace(\" A\", \"\").trim());\nlet I2 = parseFloat(data.I2.replace(\" A\", \"\").trim());\nlet I3 = parseFloat(data.I3.replace(\" A\", \"\").trim());\n\nlet E1 = parseFloat(data.E1.replace(\" kWh\", \"\").trim());\nlet E2 = parseFloat(data.E2.replace(\" kWh\", \"\").trim());\nlet E3 = parseFloat(data.E3.replace(\" kWh\", \"\").trim());\n\nlet P1 = parseFloat(data.P1.replace(\" W\", \"\").trim());\nlet P2 = parseFloat(data.P2.replace(\" W\", \"\").trim());\nlet P3 = parseFloat(data.P3.replace(\" W\", \"\").trim());\n\nlet F1 = parseFloat(data.F1.replace(\" Hz\", \"\").trim());\nlet F2 = parseFloat(data.F2.replace(\" Hz\", \"\").trim());\nlet F3 = parseFloat(data.F3.replace(\" Hz\", \"\").trim());\n\nlet PF1 = parseFloat(data.PF1);\nlet PF2 = parseFloat(data.PF2);\nlet PF3 = parseFloat(data.PF3);\n\n// Menyiapkan query SQL untuk memasukkan semua nilai ke PostgreSQL\nmsg.query = `\n  INSERT INTO monitoringenergy (\n    \"V1\", \"V2\", \"V3\", \n    \"I1\", \"I2\", \"I3\", \n    \"E1\", \"E2\", \"E3\", \n    \"P1\", \"P2\", \"P3\", \n    \"F1\", \"F2\", \"F3\", \n    \"PF1\", \"PF2\", \"PF3\"\n  ) VALUES (\n    $1, $2, $3, \n    $4, $5, $6, \n    $7, $8, $9, \n    $10, $11, $12, \n    $13, $14, $15, \n    $16, $17, $18\n  )\n`;\n\n// Memasukkan nilai-nilai dalam urutan yang sesuai untuk query PostgreSQL\nmsg.params = [\n  V1, V2, V3, \n  I1, I2, I3, \n  E1, E2, E3, \n  P1, P2, P3, \n  F1, F2, F3, \n  PF1, PF2, PF3\n];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "516a25de3d121ab1"
+            ]
+        ]
+    },
+    {
+        "id": "14a3f6a4541e73f3",
+        "type": "function",
+        "z": "69bbeba1be5c84a3",
+        "name": "function 26",
+        "func": "// Ambil data dari MQTT payload\nvar payload = msg.payload;\n\n// Pastikan payload adalah objek dan memiliki properti E1, E2, E3\nif (payload && payload.E1 && payload.E2 && payload.E3) {\n    // Ambil nilai E1, E2, dan E3 setelah menghapus unit (kWh) jika ada\n    var E1 = parseFloat(payload.E1.replace(\" kWh\", \"\").trim());\n    var E2 = parseFloat(payload.E2.replace(\" kWh\", \"\").trim());\n    var E3 = parseFloat(payload.E3.replace(\" kWh\", \"\").trim());\n\n    // Periksa apakah semua nilai berhasil dikonversi menjadi angka\n    if (!isNaN(E1) && !isNaN(E2) && !isNaN(E3)) {\n        // Hitung total energi\n        var totalEnergy = E1 + E2 + E3;\n\n        // Buat timestamp dengan format HH:MM\n        var now = new Date();\n        var timeLabel = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');\n\n        // Format data untuk dikirim ke UI\n        var result = { label: timeLabel, value: totalEnergy };\n\n        // Simpan data ke context untuk referensi di masa mendatang\n        context.set('lastData', result);\n\n        // Kirim data ke UI\n        msg.payload = result;\n        return msg;\n    } else {\n        // Jika salah satu nilai bukan angka\n        node.error(\"Salah satu nilai E1, E2, atau E3 tidak valid: \" + JSON.stringify(payload));\n    }\n} else {\n    // Jika payload tidak memiliki properti yang diperlukan\n    node.error(\"Payload tidak memiliki properti E1, E2, atau E3: \" + JSON.stringify(payload));\n}\n\n// Jika terjadi kesalahan, tidak mengirim pesan ke UI\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 580,
+        "wires": [
+            [
+                "1066582e73854e25"
+            ]
+        ]
+    },
+    {
+        "id": "1a88ef1668ddf77f",
+        "type": "function",
+        "z": "69bbeba1be5c84a3",
+        "name": "function 27",
+        "func": "// Data terakhir yang disimpan, dengan struktur yang berisi V1, V2, V3, dan timestamp dalam format HH:MM\nlet lastVoltageData = context.get('lastVoltageData') || { \n    V1: 0, \n    V2: 0, \n    V3: 0, \n    time: \"00:00\" // Waktu dalam format HH:MM\n};\n\n// Logging untuk debugging\nnode.warn(\"Payload diterima: \" + JSON.stringify(msg.payload));\n\n// Jika payload bukan array, ubah menjadi array\nif (!Array.isArray(msg.payload)) {\n    msg.payload = [msg.payload];\n}\n\n// Periksa apakah msg.payload berbentuk array dan memiliki elemen pertama\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    // Ambil elemen pertama dari array\n    let firstElement = msg.payload[0];\n\n    // Pastikan firstElement memiliki properti V1, V2, dan V3\n    if (firstElement.V1 && firstElement.V2 && firstElement.V3) {\n        // Trim nilai V1, V2, dan V3 untuk menghilangkan spasi atau karakter tambahan\n        let V1 = parseFloat(firstElement.V1.trim()); \n        let V2 = parseFloat(firstElement.V2.trim()); \n        let V3 = parseFloat(firstElement.V3.trim()); \n\n        // Periksa apakah nilai berhasil dikonversi menjadi angka\n        if (!isNaN(V1) && !isNaN(V2) && !isNaN(V3)) {\n            // Ambil waktu lokal saat ini dalam format HH:MM\n            let now = new Date();\n            let hours = String(now.getHours()).padStart(2, '0');\n            let minutes = String(now.getMinutes()).padStart(2, '0');\n            let time = `${hours}:${minutes}`; // Format sebagai HH:MM\n\n            // Perbarui lastVoltageData dengan nilai baru dan timestamp dalam format HH:MM\n            lastVoltageData = {\n                V1: V1,\n                V2: V2,\n                V3: V3,\n                time: time // Waktu dalam format HH:MM\n            };\n\n            // Simpan data terakhir ke context\n            context.set('lastVoltageData', lastVoltageData);\n\n            // Format data untuk grafik atau tabel\n            let chartData = [\n                {\n                    series: [\"V1\", \"V2\", \"V3\"],   // Jalur grafik\n                    data: [                      // Data untuk jalur\n                        [V1],                     // Data untuk V1\n                        [V2],                     // Data untuk V2\n                        [V3]                      // Data untuk V3\n                    ],\n                    labels: [time]               // Label waktu\n                }\n            ];\n\n            // Kirim data ke grafik atau tabel\n            return { payload: chartData };\n        } else {\n            node.error(\"Salah satu nilai V1, V2, atau V3 tidak bisa dikonversi: \" + JSON.stringify(firstElement), msg);\n        }\n    } else {\n        node.error(\"Format payload tidak memiliki properti V1, V2, atau V3: \" + JSON.stringify(firstElement), msg);\n    }\n} else {\n    node.error(\"Payload harus berupa array dengan elemen pertama berisi data yang diharapkan\", msg);\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 540,
+        "wires": [
+            [
+                "dcfe528c987ea00e"
+            ]
+        ]
+    },
+    {
+        "id": "d4705bd6c4c4d6c2",
+        "type": "function",
+        "z": "69bbeba1be5c84a3",
+        "name": "function 28",
+        "func": "// Data terakhir yang disimpan, dengan struktur yang berisi R, S, T, dan timestamp dalam format HH:MM\nlet lastData = context.get('lastData') || {\n    R: 0,\n    S: 0,\n    T: 0,\n    time: \"00:00\" // Waktu dalam format HH:MM\n};\n\n// Logging untuk debugging\nnode.warn(\"Payload diterima: \" + JSON.stringify(msg.payload));\n\n// Jika payload bukan array, ubah menjadi array\nif (!Array.isArray(msg.payload)) {\n    msg.payload = [msg.payload];\n}\n\n// Periksa apakah msg.payload berbentuk array dan memiliki elemen pertama\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    // Ambil elemen pertama dari array\n    let firstElement = msg.payload[0];\n\n    // Pastikan firstElement memiliki properti I1, I2, dan I3\n    if (firstElement.I1 && firstElement.I2 && firstElement.I3) {\n        // Trim nilai I1, I2, dan I3 untuk menghilangkan spasi atau karakter tambahan\n        let R = parseFloat(firstElement.I1.trim());\n        let S = parseFloat(firstElement.I2.trim());\n        let T = parseFloat(firstElement.I3.trim());\n\n        // Periksa apakah nilai berhasil dikonversi menjadi angka\n        if (!isNaN(R) && !isNaN(S) && !isNaN(T)) {\n            // Ambil waktu lokal saat ini dalam format HH:MM\n            let now = new Date();\n            let hours = String(now.getHours()).padStart(2, '0');\n            let minutes = String(now.getMinutes()).padStart(2, '0');\n            let time = `${hours}:${minutes}`; // Format sebagai HH:MM\n\n            // Perbarui lastData dengan nilai baru dan timestamp dalam format HH:MM\n            lastData = {\n                R: R,\n                S: S,\n                T: T,\n                time: time // Waktu dalam format HH:MM\n            };\n\n            // Simpan data terakhir ke context\n            context.set('lastData', lastData);\n\n            // Format data untuk grafik\n            let chartData = [\n                {\n                    series: [\"R\", \"S\", \"T\"],\n                    data: [[R], [S], [T]],\n                    labels: [time]\n                }\n            ];\n\n            // Kirim data ke grafik\n            return { payload: chartData };\n        } else {\n            node.error(\"Salah satu nilai I1, I2, atau I3 tidak bisa dikonversi: \" + JSON.stringify(firstElement), msg);\n        }\n    } else {\n        node.error(\"Format payload tidak memiliki properti I1, I2, atau I3: \" + JSON.stringify(firstElement), msg);\n    }\n} \n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 500,
+        "wires": [
+            [
+                "e756e0dd3766a71f"
+            ]
+        ]
+    },
+    {
+        "id": "96ed90ad2f1dc4f6",
+        "type": "function",
+        "z": "69bbeba1be5c84a3",
+        "name": "function 29",
+        "func": "// Ambil data payload dari MQTT\nvar data = msg.payload;\n\n// Ambil data terakhir dari context jika ada\nvar lastDataUI1 = context.get('lastUI1') || { R: {}, S: {}, T: {} };\nvar lastDataUI2 = context.get('lastUI2') || { R: {}, S: {}, T: {} };\nvar lastDataUI3 = context.get('lastUI3') || { R: {}, S: {}, T: {} };\nvar lastDataUI4 = context.get('lastUI4') || { R: {}, S: {}, T: {} };\nvar lastDataUI5 = context.get('lastUI5') || { R: {}, S: {}, T: {} };\nvar lastDataUI6 = context.get('lastUI6') || { R: {}, S: {}, T: {} }; // Data untuk frekuensi\n\n// Fungsi untuk parsing nilai dan menghapus unit (e.g., \"V\", \"A\", \"kWh\", \"Hz\")\nfunction parseValue(value) {\n    if (typeof value === \"string\") {\n        return parseFloat(value.replace(/[^\\d.-]/g, \"\")) || 0; // Parsing string\n    } else if (typeof value === \"number\") {\n        return value; // Jika sudah berupa angka, langsung gunakan\n    }\n    return 0; // Jika null atau tipe data lain, kembalikan 0\n}\n\n// Ambil nilai threshold yang disimpan di Flow Context\nvar thresholdCurrent = flow.get('currentThreshold') || 50; // Default 50 jika tidak ada input\nvar thresholdVoltage = flow.get('voltageThreshold') || 230; // Default 230 untuk tegangan\nvar thresholdEnergy = flow.get('energyThreshold') || 1000; // Default 1000 untuk energi\nvar thresholdPower = flow.get('powerThreshold') || 5000; // Default 5000 untuk daya\nvar thresholdPF = flow.get('pfThreshold') || 0.85; // Default 0.85 untuk faktor daya\nvar thresholdFrequency = flow.get('frequencyThreshold') || 49.0; // Default 49.0 untuk frekuensi\n\n// Debug nilai threshold\nnode.warn(\"Threshold Current: \" + thresholdCurrent);\n\n// Proses data untuk UI1 (Current / I1, I2, I3)\nif (data.I1 && data.I2 && data.I3) {\n    ['I1', 'I2', 'I3'].forEach((key, index) => {\n        var phase = parseValue(data[key]); // Parse nilai\n        var status = phase >= thresholdCurrent ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold arus\n        lastDataUI1[String.fromCharCode(82 + index)] = { value: phase, status: status }; // 'R', 'S', 'T'\n    });\n    context.set('lastUI1', lastDataUI1);\n} else {\n    node.warn(\"Data untuk UI 1 (I1, I2, I3) tidak ditemukan.\");\n}\n\n// Proses data untuk UI2 (Voltage / V1, V2, V3)\nif (data.V1 && data.V2 && data.V3) {\n    ['V1', 'V2', 'V3'].forEach((key, index) => {\n        var phase = parseValue(data[key]); // Parse nilai\n        var status = phase >= thresholdVoltage ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold tegangan\n        lastDataUI2[String.fromCharCode(82 + index)] = { value: phase, status: status }; // 'R', 'S', 'T'\n    });\n    context.set('lastUI2', lastDataUI2);\n} else {\n    node.warn(\"Data untuk UI 2 (V1, V2, V3) tidak ditemukan.\");\n}\n\n// Proses data untuk UI3 (Energy / E1, E2, E3)\nif (data.E1 && data.E2 && data.E3) {\n    ['E1', 'E2', 'E3'].forEach((key, index) => {\n        var phase = parseValue(data[key]); // Parse nilai\n        var status = phase >= thresholdEnergy ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold energi\n        lastDataUI3[String.fromCharCode(82 + index)] = { value: phase, status: status }; // 'R', 'S', 'T'\n    });\n    context.set('lastUI3', lastDataUI3);\n} else {\n    node.warn(\"Data untuk UI 3 (E1, E2, E3) tidak ditemukan.\");\n}\n\n// Proses data untuk UI4 (Power / P1, P2, P3)\nif (data.P1 && data.P2 && data.P3) {\n    ['P1', 'P2', 'P3'].forEach((key, index) => {\n        var phase = parseValue(data[key]); // Parse nilai\n        var status = phase >= thresholdPower ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold daya\n        lastDataUI4[String.fromCharCode(82 + index)] = { value: phase, status: status }; // 'R', 'S', 'T'\n    });\n    context.set('lastUI4', lastDataUI4);\n} else {\n    node.warn(\"Data untuk UI 4 (P1, P2, P3) tidak ditemukan.\");\n}\n\n// Proses data untuk UI5 (Power Factor / PF1, PF2, PF3)\nif (data.PF1 && data.PF2 && data.PF3) {\n    ['PF1', 'PF2', 'PF3'].forEach((key, index) => {\n        var phase = parseValue(data[key]); // Parse nilai\n        var status = phase >= thresholdPF ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold faktor daya\n        lastDataUI5[String.fromCharCode(82 + index)] = { value: phase, status: status }; // 'R', 'S', 'T'\n    });\n    context.set('lastUI5', lastDataUI5);\n} else {\n    node.warn(\"Data untuk UI 5 (PF1, PF2, PF3) tidak ditemukan.\");\n}\n\n// Proses data untuk UI6 (Frequency / F1, F2, F3) - **Frekuensi**\nif (data.F1 && data.F2 && data.F3) {\n    ['F1', 'F2', 'F3'].forEach((key, index) => {\n        var phase = parseValue(data[key]); // Parse nilai\n        var status = phase >= thresholdFrequency ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold frekuensi\n        lastDataUI6[String.fromCharCode(82 + index)] = { value: phase, status: status }; // 'R', 'S', 'T'\n    });\n    context.set('lastUI6', lastDataUI6);\n} else {\n    node.warn(\"Data untuk UI 6 (F1, F2, F3) tidak ditemukan.\");\n}\n\n// Siapkan payload untuk dikirim ke UI\nmsg.payload = {\n    ui1: lastDataUI1, // Data untuk UI 1\n    ui2: lastDataUI2, // Data untuk UI 2\n    ui3: lastDataUI3, // Data untuk UI 3\n    ui4: lastDataUI4, // Data untuk UI 4\n    ui5: lastDataUI5, // Data untuk UI 5\n    ui6: lastDataUI6  // Data untuk UI 6 (Frekuensi)\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba531a8ef80eb558",
+        "type": "link in",
+        "z": "69bbeba1be5c84a3",
+        "name": "link in 1",
+        "links": [],
+        "x": 265,
+        "y": 180,
+        "wires": [
+            [
+                "96ed90ad2f1dc4f6",
+                "073aef1c9c654eea"
+            ]
+        ]
+    },
+    {
+        "id": "073aef1c9c654eea",
+        "type": "debug",
+        "z": "69bbeba1be5c84a3",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e756e0dd3766a71f",
+        "type": "ui_chart",
+        "z": "69bbeba1be5c84a3",
+        "name": "",
+        "group": "",
+        "order": 1,
+        "width": 10,
+        "height": 4,
+        "label": "GRAFIK PH",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dcfe528c987ea00e",
+        "type": "ui_chart",
+        "z": "69bbeba1be5c84a3",
+        "name": "",
+        "group": "",
+        "order": 2,
+        "width": 10,
+        "height": 4,
+        "label": "GRAFIK KEJERNIHAN",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 910,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1066582e73854e25",
+        "type": "ui_chart",
+        "z": "69bbeba1be5c84a3",
+        "name": "",
+        "group": "",
+        "order": 3,
+        "width": 20,
+        "height": 5,
+        "label": "GRAFIK KETINGGIAN",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 900,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a5fa4ede43312b4",
+        "type": "ui_chart",
+        "z": "69bbeba1be5c84a3",
+        "name": "",
+        "group": "",
+        "order": 1,
+        "width": 10,
+        "height": 3,
+        "label": "GRAFIK KETINGGIAN",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 900,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "215db4a4114e905e",
+        "type": "ui_template",
+        "z": "69bbeba1be5c84a3",
+        "group": "",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 280,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fcfbccd1aeaa2b1",
+        "type": "ui_template",
+        "z": "ee0f0338bacecc64",
+        "group": "",
+        "name": "cardArus",
+        "order": 1,
+        "width": 8,
+        "height": 5,
+        "format": "<div\n    style=\"display: flex; flex-direction: column; align-items: center; width: 300px; height: 200px; background: var(--Card, #EAEAEA); border-radius: 15px; padding: 20px;\">\n    <!-- Judul -->\n    <h2 style=\"margin: 0; font-size: 24px; color: #333; background-color: transparent !important;\">Arus</h2>\n\n    <!-- Card untuk 1 Fasa -->\n    <div\n        style=\"width: 280px; height: 140px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFF; border-radius: 15px; margin-top: 20px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);\">\n        <!-- Value -->\n        <div style=\"font-size: 24px; margin-top: 10px; width: 100px; text-align: center;\" id=\"valueR\">&nbsp;</div>\n\n        <!-- Status -->\n        <div style=\"margin-top: 10px; font-size: 16px; text-align: center;\">\n            Status: <span id=\"statusR\" style=\"font-weight: bold;\">&nbsp;</span>\n        </div>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n        // Watch for updates in the scope to dynamically change values\n        scope.$watch('msg.payload.ui1', function(data) {\n            if (data && data.R) {\n                // Update value for R with unit \"A\" (Amps)\n                document.getElementById(\"valueR\").innerHTML = data.R.value + \" A\";\n\n                // Update status for R\n                document.getElementById(\"statusR\").innerHTML = data.R.status;\n\n                // Change color dynamically based on condition\n                document.getElementById(\"statusR\").style.color = (data.R.status === \"Good\") ? \"green\" : \"red\";\n            } else {\n                // If no data, reset the UI to empty state\n                document.getElementById(\"valueR\").innerHTML = \"&nbsp;\";\n                document.getElementById(\"statusR\").innerHTML = \"&nbsp;\";\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "894e45dd961f2e01",
+        "type": "ui_template",
+        "z": "ee0f0338bacecc64",
+        "group": "",
+        "name": "cardTegangan",
+        "order": 2,
+        "width": 8,
+        "height": 5,
+        "format": "<div\n    style=\"display: flex; flex-direction: column; align-items: center; width: 300px; height: 200px; background: var(--Card, #EAEAEA); rgba(0, 0, 0, 0.10); border-radius: 15px; padding: 20px;\">\n    <!-- Judul -->\n    <h2 style=\"margin: 0; font-size: 24px; color: #333; background-color: transparent !important;\">Voltage</h2>\n\n    <!-- Card untuk 1 Fasa -->\n    <div\n        style=\"width: 280px; height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFF; border-radius: 15px; margin-top: 20px;\">\n        <div style=\"font-size: 24px; margin-top: 10px; width: 80px; text-align: center;\" id=\"valueV\">&nbsp;</div>\n        <div style=\"margin-top: 10px; font-size: 16px; width: 80px; text-align: center;\">Status :\n            <span id=\"statusV\" style=\"font-weight: bold;\">&nbsp;</span>\n        </div>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n        // Watch for updates in the scope to dynamically change values\n        scope.$watch('msg.payload.ui2.R', function(data) {\n            if (data) {\n                // Update value for V with unit \"V\"\n                document.getElementById(\"valueV\").innerHTML = data.value + \" V\";\n\n                // Update status for V\n                document.getElementById(\"statusV\").innerHTML = data.status;\n\n                // Change color dynamically based on condition\n                document.getElementById(\"statusV\").style.color = (data.status === \"Good\") ? \"green\" : \"red\";\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d57fbbf80634392",
+        "type": "ui_template",
+        "z": "ee0f0338bacecc64",
+        "group": "",
+        "name": "cardEnergy",
+        "order": 4,
+        "width": 8,
+        "height": 5,
+        "format": "<div\n    style=\"display: flex; flex-direction: column; align-items: center; width: 300px; height: 200px; background: var(--Card, #EAEAEA); rgba(0, 0, 0, 0.10); border-radius: 15px; padding: 20px;\">\n    <!-- Judul -->\n    <h2 style=\"margin: 0; font-size: 24px; color: #333; background-color: transparent !important;\">Energy</h2>\n\n    <!-- Card untuk 1 Fasa -->\n    <div\n        style=\"width: 280px; height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFF; border-radius: 15px; margin-top: 20px;\">\n        <div style=\"font-size: 24px; margin-top: 10px; width: 80px; text-align: center;\" id=\"valueE\">&nbsp;</div>\n        <div style=\"margin-top: 10px; font-size: 16px; width: 80px; text-align: center;\">Status :\n            <span id=\"statusE\" style=\"font-weight: bold;\">&nbsp;</span>\n        </div>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n        // Watch for updates in the scope to dynamically change values\n        scope.$watch('msg.payload.ui3.R', function(data) {\n            if (data) {\n                // Update value for Energy with unit \"kWh\"\n                document.getElementById(\"valueE\").innerHTML = data.value + \" kWh\";\n\n                // Update status for Energy\n                document.getElementById(\"statusE\").innerHTML = data.status;\n\n                // Change color dynamically based on condition\n                document.getElementById(\"statusE\").style.color = (data.status === \"Good\") ? \"green\" : \"red\";\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8810655b33811318",
+        "type": "ui_template",
+        "z": "ee0f0338bacecc64",
+        "group": "",
+        "name": "cardPower",
+        "order": 3,
+        "width": 8,
+        "height": 5,
+        "format": "<div\n    style=\"display: flex; flex-direction: column; align-items: center; width: 300px; height: 200px; background: var(--Card, #EAEAEA); rgba(0, 0, 0, 0.10); border-radius: 15px; padding: 20px;\">\n    <!-- Judul -->\n    <h2 style=\"margin: 0; font-size: 24px; color: #333; background-color: transparent !important;\">Power</h2>\n\n    <!-- Card untuk 1 Fasa -->\n    <div\n        style=\"width: 280px; height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFF; border-radius: 15px; margin-top: 20px;\">\n        <div style=\"font-size: 24px; margin-top: 10px; width: 80px; text-align: center;\" id=\"valueP\">&nbsp;</div>\n        <div style=\"margin-top: 10px; font-size: 16px; width: 80px; text-align: center;\">Status :\n            <span id=\"statusP\" style=\"font-weight: bold;\">&nbsp;</span>\n        </div>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n        // Watch for updates in the scope to dynamically change values\n        scope.$watch('msg.payload.ui4.R', function(data) {\n            if (data) {\n                // Update value for Power with unit \"W\"\n                document.getElementById(\"valueP\").innerHTML = data.value + \" W\";\n\n                // Update status for Power\n                document.getElementById(\"statusP\").innerHTML = data.status;\n\n                // Change color dynamically based on condition\n                document.getElementById(\"statusP\").style.color = (data.status === \"Good\") ? \"green\" : \"red\";\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a18e36dd37de7284",
+        "type": "ui_template",
+        "z": "ee0f0338bacecc64",
+        "group": "",
+        "name": "cardFrekuensi",
+        "order": 5,
+        "width": 8,
+        "height": 5,
+        "format": "<div\n    style=\"display: flex; flex-direction: column; align-items: center; width: 300px; height: 200px; background: var(--Card, #EAEAEA); rgba(0, 0, 0, 0.10); border-radius: 15px; padding: 20px;\">\n    <!-- Judul -->\n    <h2 style=\"margin: 0; font-size: 24px; color: #333; background-color: transparent !important;\">Frequency</h2>\n\n    <!-- Card untuk 1 Fasa -->\n    <div\n        style=\"width: 280px; height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFF; border-radius: 15px; margin-top: 20px;\">\n        <div style=\"font-size: 24px; margin-top: 10px; width: 80px; text-align: center;\" id=\"valueF\">&nbsp;</div>\n        <div style=\"margin-top: 10px; font-size: 16px; width: 80px; text-align: center;\">Status :\n            <span id=\"statusF\" style=\"font-weight: bold;\">&nbsp;</span>\n        </div>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n        // Watch for updates in the scope to dynamically change values\n        scope.$watch('msg.payload.ui5.R', function(data) {\n            if (data) {\n                // Update value for Frequency with unit \"Hz\"\n                document.getElementById(\"valueF\").innerHTML = data.value + \" Hz\";\n\n                // Update status for Frequency\n                document.getElementById(\"statusF\").innerHTML = data.status;\n\n                // Change color dynamically based on condition\n                document.getElementById(\"statusF\").style.color = (data.status === \"Good\") ? \"green\" : \"red\";\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03018a3e57c3cc09",
+        "type": "ui_template",
+        "z": "ee0f0338bacecc64",
+        "group": "",
+        "name": "cardPF",
+        "order": 6,
+        "width": 8,
+        "height": 5,
+        "format": "<div\n    style=\"display: flex; flex-direction: column; align-items: center; width: 300px; height: 200px; background: var(--Card, #EAEAEA); rgba(0, 0, 0, 0.10); border-radius: 15px; padding: 20px;\">\n    <!-- Judul -->\n    <h2 style=\"margin: 0; font-size: 24px; color: #333; background-color: transparent !important;\">Power Factor</h2>\n\n    <!-- Card untuk 1 Fasa -->\n    <div\n        style=\"width: 280px; height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFF; border-radius: 15px; margin-top: 20px;\">\n        <div style=\"font-size: 24px; margin-top: 10px; width: 80px; text-align: center;\" id=\"valuePF\">&nbsp;</div>\n        <div style=\"margin-top: 10px; font-size: 16px; width: 80px; text-align: center;\">Status :\n            <span id=\"statusPF\" style=\"font-weight: bold;\">&nbsp;</span>\n        </div>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n        // Watch for updates in the scope to dynamically change values\n        scope.$watch('msg.payload.ui6.R', function(data) {\n            if (data) {\n                // Update value for Power Factor with no unit\n                document.getElementById(\"valuePF\").innerHTML = data.value;\n\n                // Update status for Power Factor\n                document.getElementById(\"statusPF\").innerHTML = data.status;\n\n                // Change color dynamically based on condition\n                document.getElementById(\"statusPF\").style.color = (data.status === \"Good\") ? \"green\" : \"red\";\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b8aa41ed3605dc7",
+        "type": "function",
+        "z": "ee0f0338bacecc64",
+        "name": "function 31",
+        "func": "// Ambil data payload dari MQTT\nvar data = msg.payload;\n\n// Ambil data terakhir dari context jika ada\nvar lastData1 = context.get('lastU1') || { R: {} };\nvar lastData2 = context.get('lastU2') || { R: {} };\nvar lastData3 = context.get('lastU3') || { R: {} };\nvar lastData4 = context.get('lastU4') || { R: {} };\nvar lastData5 = context.get('lastU5') || { R: {} };\nvar lastData6 = context.get('lastU6') || { R: {} }; // Data untuk frekuensi\n\n// Fungsi untuk parsing nilai dan menghapus unit (e.g., \"V\", \"A\", \"kWh\", \"Hz\")\nfunction parseValue(value) {\n    if (typeof value === \"string\") {\n        return parseFloat(value.replace(/[^\\d.-]/g, \"\")) || 0; // Parsing string\n    } else if (typeof value === \"number\") {\n        return value; // Jika sudah berupa angka, langsung gunakan\n    }\n    return 0; // Jika null atau tipe data lain, kembalikan 0\n}\n\n// Ambil nilai threshold yang disimpan di Flow Context\nvar thresholdCurrent = flow.get('currentThreshold') || 50; // Default 50 jika tidak ada input\nvar thresholdVoltage = flow.get('voltageThreshold') || 230; // Default 230 untuk tegangan\nvar thresholdEnergy = flow.get('energyThreshold') || 1000; // Default 1000 untuk energi\nvar thresholdPower = flow.get('powerThreshold') || 5000; // Default 5000 untuk daya\nvar thresholdPF = flow.get('pfThreshold') || 0.85; // Default 0.85 untuk faktor daya\nvar thresholdFrequency = flow.get('frequencyThreshold') || 49.0; // Default 49.0 untuk frekuensi\n\n// Debug nilai threshold\nnode.warn(\"Threshold Current: \" + thresholdCurrent);\n\n// Proses data untuk UI1 (Current / I1)\nif (data.I1) {\n    var phase = parseValue(data.I1); // Parse nilai\n    var status = phase >= thresholdCurrent ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold arus\n    lastData1.R = { value: phase, status: status }; // Hanya fase R\n    context.set('lastU1', lastData1);\n} else {\n    node.warn(\"Data untuk UI 1 (I1) tidak ditemukan.\");\n}\n\n// Proses data untuk UI2 (Voltage / V1)\nif (data.V1) {\n    var phase = parseValue(data.V1); // Parse nilai\n    var status = phase >= thresholdVoltage ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold tegangan\n    lastData2.R = { value: phase, status: status }; // Hanya fase R\n    context.set('lastU2', lastData2);\n} else {\n    node.warn(\"Data untuk UI 2 (V1) tidak ditemukan.\");\n}\n\n// Proses data untuk UI3 (Energy / E1)\nif (data.E1) {\n    var phase = parseValue(data.E1); // Parse nilai\n    var status = phase >= thresholdEnergy ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold energi\n    lastData3.R = { value: phase, status: status }; // Hanya fase R\n    context.set('lastU3', lastData3);\n} else {\n    node.warn(\"Data untuk UI 3 (E1) tidak ditemukan.\");\n}\n\n// Proses data untuk UI4 (Power / P1)\nif (data.P1) {\n    var phase = parseValue(data.P1); // Parse nilai\n    var status = phase >= thresholdPower ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold daya\n    lastData4.R = { value: phase, status: status }; // Hanya fase R\n    context.set('lastU4', lastData4);\n} else {\n    node.warn(\"Data untuk UI 4 (P1) tidak ditemukan.\");\n}\n\n// Proses data untuk UI5 (Power Factor / PF1)\nif (data.PF1) {\n    var phase = parseValue(data.PF1); // Parse nilai\n    var status = phase >= thresholdPF ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold faktor daya\n    lastData5.R = { value: phase, status: status }; // Hanya fase R\n    context.set('lastU5', lastData5);\n} else {\n    node.warn(\"Data untuk UI 5 (PF1) tidak ditemukan.\");\n}\n\n// Proses data untuk UI6 (Frequency / F1)\nif (data.F1) {\n    var phase = parseValue(data.F1); // Parse nilai\n    var status = phase >= thresholdFrequency ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan threshold frekuensi\n    lastData6.R = { value: phase, status: status }; // Hanya fase R\n    context.set('lastU6', lastData6);\n} else {\n    node.warn(\"Data untuk UI 6 (F1) tidak ditemukan.\");\n}\n\n// Siapkan payload untuk dikirim ke UI\nmsg.payload = {\n    ui1: lastData1, // Data untuk UI 1\n    ui2: lastData2, // Data untuk UI 2\n    ui3: lastData3, // Data untuk UI 3\n    ui4: lastData4, // Data untuk UI 4\n    ui5: lastData5, // Data untuk UI 5\n    ui6: lastData6  // Data untuk UI 6 (Frekuensi)\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "8fcfbccd1aeaa2b1",
+                "894e45dd961f2e01",
+                "3d57fbbf80634392",
+                "8810655b33811318",
+                "a18e36dd37de7284",
+                "03018a3e57c3cc09"
+            ]
+        ]
+    },
+    {
+        "id": "27ebbb6c89e4dfe0",
+        "type": "mqtt in",
+        "z": "ee0f0338bacecc64",
+        "name": "",
+        "topic": "Melbu",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "1f90e14f92c8adab",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 260,
+        "wires": [
+            [
+                "1b8aa41ed3605dc7",
+                "aceee00dad6f62ec"
+            ]
+        ]
+    },
+    {
+        "id": "ebb7e1cec79af2e8",
+        "type": "ui_template",
+        "z": "ee0f0338bacecc64",
+        "group": "",
+        "name": "tabel real time",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "format": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Data Sensor</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            margin: 20px;\n        }\n\n        .input-container {\n            margin-bottom: 15px;\n            display: flex;\n            align-items: center;\n            gap: 10px;\n        }\n\n        .input-container input {\n            border: 2px solid #ccc;\n            border-radius: 5px;\n            padding: 5px;\n            font-size: 16px;\n            width: 100px;\n            color: #4CAF50;\n        }\n\n        .input-container button {\n            background-color: #2d545e;\n            color: white;\n            border: none;\n            padding: 8px 15px;\n            border-radius: 5px;\n            font-size: 16px;\n            cursor: pointer;\n        }\n\n        table {\n            width: 100%;\n            border-collapse: collapse;\n            text-align: center;\n            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);\n        }\n\n        th,\n        td {\n            padding: 8px;\n            border: 1px solid #ddd;\n        }\n\n        thead tr {\n            background-color: #EAEAEA;\n            color: black;\n        }\n    </style>\n</head>\n\n<body>\n    <div class=\"input-container\">\n        <!-- Input Jumlah Baris -->\n        <input id=\"rowCount\" type=\"number\" min=\"1\" max=\"50\" value=\"10\" placeholder=\"Jumlah baris\" />\n\n        <!-- Tombol Reset -->\n        <button id=\"resetButton\">Reset</button>\n    </div>\n\n    <table>\n        <thead>\n            <tr>\n                <th>No</th>\n                <th>Timestamp</th>\n                <th>Voltage (V)</th>\n                <th>Current (I)</th>\n                <th>Power (P)</th>\n                <th>Energy (E)</th>\n                <th>Frequency (F)</th>\n                <th>Power Factor (PF)</th>\n            </tr>\n        </thead>\n        <tbody id=\"sensor-data\">\n            <!-- Baris kosong awal -->\n            <tr>\n                <td colspan=\"8\">Loading...</td>\n            </tr>\n        </tbody>\n    </table>\n\n    <script>\n        (function(scope) {\n            const maxRows = 50;\n            let displayedRows = 10; // Default jumlah baris ditampilkan\n\n            // Fungsi membuat tabel kosong\n            function createEmptyTable(rowCount) {\n                const tableBody = document.getElementById('sensor-data');\n                tableBody.innerHTML = ''; // Kosongkan isi tabel\n                for (let i = 1; i <= rowCount; i++) {\n                    const tr = document.createElement('tr');\n                    tr.innerHTML = `\n                        <td>${i}</td>\n                        <td>-</td>\n                        <td>-</td>\n                        <td>-</td>\n                        <td>-</td>\n                        <td>-</td>\n                        <td>-</td>\n                        <td>-</td>\n                    `;\n                    tableBody.appendChild(tr);\n                }\n            }\n\n            // Inisialisasi tabel kosong\n            createEmptyTable(displayedRows);\n\n            // Monitor perubahan jumlah baris\n            document.getElementById('rowCount').addEventListener('input', function(event) {\n                const newRowCount = parseInt(event.target.value) || displayedRows;\n                if (newRowCount >= 1 && newRowCount <= maxRows) {\n                    displayedRows = newRowCount;\n                    createEmptyTable(displayedRows);\n                }\n            });\n\n            // Tombol Reset\n            document.getElementById('resetButton').addEventListener('click', function() {\n                document.getElementById('rowCount').value = 10; // Reset nilai input\n                displayedRows = 10;\n                createEmptyTable(displayedRows); // Reset tabel\n            });\n\n            // Watch untuk Node-RED\n            scope.$watch('msg.payload', function(data) {\n                console.log(data); // Debug data yang diterima\n\n                if (!data) return;\n\n                const tableBody = document.getElementById('sensor-data');\n                tableBody.innerHTML = ''; // Kosongkan tabel\n\n                // Perbarui tabel sesuai jumlah baris yang diminta\n                for (let i = 0; i < displayedRows; i++) {\n                    const tr = document.createElement('tr');\n                    tr.innerHTML = `\n                        <td>${i + 1}</td>\n                        <td>${new Date().toLocaleString()}</td>\n                        <td>${data.Voltage || '-'}</td>\n                        <td>${data.Current || '-'}</td>\n                        <td>${data.Power || '-'}</td>\n                        <td>${data.Energy || '-'}</td>\n                        <td>${data.Frequency || '-'}</td>\n                        <td>${data.PowerFactor || '-'}</td>\n                    `;\n                    tableBody.appendChild(tr);\n                }\n            });\n        })(scope);\n    </script>\n</body>\n\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aceee00dad6f62ec",
+        "type": "function",
+        "z": "ee0f0338bacecc64",
+        "name": "function 32",
+        "func": "// Ambil data payload dari msg.payload\nvar data = msg.payload;\n\n// Parsing nilai untuk memastikan format angka (jika perlu)\nfunction parseValue(value) {\n    if (typeof value === \"string\") {\n        return parseFloat(value.replace(/[^\\d.-]/g, \"\")) || 0; // Parsing string\n    } else if (typeof value === \"number\") {\n        return value; // Jika sudah berupa angka\n    }\n    return 0; // Jika null atau tipe data lain, kembalikan 0\n}\n\n// Ambil data tertentu dari payload\nvar processedData = {\n    Voltage: parseValue(data.V1),     // Tegangan Fasa 1\n    Current: parseValue(data.I1),     // Arus Fasa 1\n    Power: parseValue(data.P1),       // Daya Fasa 1\n    Energy: parseValue(data.E1),      // Energi Fasa 1\n    Frequency: parseValue(data.F1),   // Frekuensi Fasa 1\n    PowerFactor: parseValue(data.PF1) // Faktor Daya Fasa 1\n};\n\n// Siapkan payload baru untuk diteruskan ke UI\nmsg.payload = processedData;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 340,
+        "wires": [
+            [
+                "ebb7e1cec79af2e8",
+                "dc74082901c2bbe7"
+            ]
+        ]
+    },
+    {
+        "id": "dc74082901c2bbe7",
+        "type": "debug",
+        "z": "ee0f0338bacecc64",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8c694e9b193d22cf",
+        "type": "mqtt in",
+        "z": "ad1d688b4c270311",
+        "name": "",
+        "topic": "sensor/air",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 400,
+        "wires": [
+            [
+                "81efbe4970d07ce4",
+                "eb1a93265e189cbf",
+                "606e09d49240d34d",
+                "e6f8b03167e7fd89",
+                "256a3b17e0cadc33",
+                "079bb83a7b329873"
+            ]
+        ]
+    },
+    {
+        "id": "6fc11fabb82255e9",
+        "type": "mqtt in",
+        "z": "ad1d688b4c270311",
+        "name": "",
+        "topic": "ultrasonic/data",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 840,
+        "wires": [
+            [
+                "f1e24d706d5eb57d",
+                "dc1b56909674b377",
+                "f6b0792857b6a23d"
+            ]
+        ]
+    },
+    {
+        "id": "f1e24d706d5eb57d",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 4",
+        "func": "let data = msg.payload;\n\nif (data && data.distance !== undefined && data.relay_status !== undefined) {\n  // Parsing nilai dari JSON\n  let jarak = parseFloat(data.distance);\n  let relay = data.relay_status;\n\n  flow.set(\"jarak_node2\", jarak);\n  \n  // let strRelay = relay.toString()\n  console.log(\"Jarak:\", jarak);\n  console.log(\"Relay Status:\", relay);\n  // Menyimpan query SQL untuk memasukkan nilai ke PostgreSQL\n  msg.query = `\n    INSERT INTO \"AIR BAKU\" (\n      \"jarak\", \"relay\"\n    ) VALUES (\n      $1, $2\n    )\n  `;\n\n  // Memasukkan nilai-nilai dalam urutan yang sesuai untuk query PostgreSQL\n  msg.params = [jarak, relay];\n\n  return msg;\n} else {\n  // Jika data tidak valid, kirim pesan error\n  node.error(\"Data tidak valid. Harap periksa format payload.\", msg);\n  return null;  // Returning null to indicate an error\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 820,
+        "wires": [
+            [
+                "7178e26837051366"
+            ]
+        ]
+    },
+    {
+        "id": "a61c57e21e1197a2",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 5",
+        "func": "// Mengambil nilai kondisi eksekusi dari flow context\nlet execute_condition = flow.get(\"execute_condition\") || 0; // Default 0 jika tidak ada data\n\n// Mengecek apakah kondisi eksekusi bernilai 1, jika tidak maka program dihentikan\nif (execute_condition !== 1) {\n    // Kondisi tidak terpenuhi, program tidak dijalankan\n    msg.payload = \"Program tidak dieksekusi\";  // Memberikan pesan jika kondisi tidak terpenuhi\n    return msg;  // Menghentikan eksekusi lebih lanjut\n}\n\n// Program ini hanya akan dijalankan jika execute_condition adalah 1\n\n// Mengambil nilai jarak dari Node 1 dan Node 2 dari flow context\nlet jarak_node1 = flow.get(\"jarak_node1\") || 0; // Gunakan 0 jika belum ada data\nlet jarak_node2 = flow.get(\"jarak_node2\") || 0; // Gunakan 0 jika belum ada data\n\n// Mendapatkan nilai threshold dari global context\nlet threshold1 = global.get(\"threshold1\") || 100; // Default 100 untuk threshold1 jika tidak disetel\nlet threshold2 = global.get(\"threshold2\") || 100; // Default 100 untuk threshold2 jika tidak disetel\n\n// Logika perbandingan\nif (jarak_node1 > threshold1 && jarak_node2 > threshold2) {\n    // Kondisi terpenuhi: kirim sinyal 1\n    msg.payload = 1;\n} else {\n    // Kondisi tidak terpenuhi: kirim sinyal 0\n    msg.payload = 0;\n}\n\n// Menambahkan informasi kondisi untuk debugging\nnode.warn(\"Kondisi: \" + msg.payload); // Menampilkan kondisi (1 atau 0) di log debug\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 420,
+        "wires": [
+            [
+                "740f7c0c24c16bdc"
+            ]
+        ]
+    },
+    {
+        "id": "740f7c0c24c16bdc",
+        "type": "mqtt out",
+        "z": "ad1d688b4c270311",
+        "name": "",
+        "topic": "inTopic",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e0f204b812109e2d",
+        "x": 640,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "81efbe4970d07ce4",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 33",
+        "func": "// Mengambil payload sebagai objek JSON\nlet data = msg.payload;\n\n// Pastikan data memiliki format yang benar\nif (data && data.pH !== undefined && data.jarak !== undefined && data.turbidity !== undefined) {\n    // Parsing nilai dari JSON\n    let pH = parseFloat(data.pH);            // Nilai pH\n    let jarak = parseFloat(data.jarak);      // Nilai jarak\n    let turbidity = parseFloat(data.turbidity); // Nilai turbidity\n\n    flow.set(\"jarak_node1\", jarak);\n\n\n    // Menyiapkan query SQL untuk memasukkan nilai ke PostgreSQL\n    msg.query = `\n      INSERT INTO \"PEMANTAUAN AIR PINDAD\" (\n        \"pH\", \"jarak\", \"turbidity\"\n      ) VALUES (\n        $1, $2, $3\n      )\n    `;\n\n    // Memasukkan nilai-nilai dalam urutan yang sesuai untuk query PostgreSQL\n    msg.params = [pH, jarak, turbidity];\n\n    // Log tambahan untuk debugging\n    node.log(`Data disimpan: Jarak=${jarak}, pH=${pH}, Turbidity=${turbidity}`);\n    return msg;\n\n} else {\n    // Jika data tidak valid, kirim pesan error\n    node.error(\"Data tidak valid. Harap periksa format payload.\", msg);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 480,
+        "wires": [
+            [
+                "c2b74383d2ad94e0",
+                "41820c730b9722f6"
+            ]
+        ]
+    },
+    {
+        "id": "c2b74383d2ad94e0",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 35",
+        "func": "// Mengambil nilai mode1 dan mode2 dari global context\nlet mode1 = global.get(\"mode1\") || false; // Default false jika tidak ada data\nlet mode2 = global.get(\"mode2\") || false; // Default false jika tidak ada data\n\n// Logika pengecekan mode\nif (mode1 === mode2) {\n    // Jika mode1 dan mode2 sama, data dianggap tidak valid\n    msg.payload = \"Data tidak valid\"; // Tanda data tidak valid\n} else if (mode1 === true && mode2 === false) {\n    // Jika mode1 true dan mode2 false, kirim nilai 1\n    msg.payload = 1;\n} else if (mode2 === true && mode1 === false) {\n    // Jika mode2 true dan mode1 false, kirim nilai 0\n    msg.payload = 0;\n} else {\n    // Jika ada kondisi lainnya (untuk memastikan semua kondisi tercakup)\n    msg.payload = \"Kondisi tidak dikenal\";\n}\n\n// Menyimpan nilai msg.payload sebagai execute_condition di flow context\nflow.set(\"execute_condition\", msg.payload);\n\n\n// Mengembalikan msg untuk diteruskan\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 420,
+        "wires": [
+            [
+                "a61c57e21e1197a2"
+            ]
+        ]
+    },
+    {
+        "id": "109ffa583b3c0620",
+        "type": "ui_template",
+        "z": "ad1d688b4c270311",
+        "group": "1d6074d5dac65b3d",
+        "name": "cardAirBersih",
+        "order": 1,
+        "width": 17,
+        "height": 7,
+        "format": "<div style=\"display: flex; justify-content: left; align-items: center; padding: 20px;\">\n    <div\n        style=\"background-color: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1); width: 100%;\">\n\n        <div style=\"text-align: center; margin-bottom: 10px; background-color: none\">\n            <h2 style=\"font-size: 26px; font-weight: 600; color: #ffffff; margin: 0; background-color: none;\">Air Bersih</h2>\n        </div>\n\n        <div style=\"display: flex; justify-content: center; align-items: center; gap: 10px;\">\n            <!-- PH Card -->\n            <div id=\"ph-card\"\n                style=\"text-align: center; background-color: #ffffff; border-radius: 12px; padding: 15px; width: 100%; height: 200px; margin-right: 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;\">\n                <h3 style=\"font-size: 18px; color: #333; margin-bottom: 8px; font-weight: 600;\">PH</h3>\n                <div\n                    style=\"border: 4px solid  #11D086; border-radius: 50%; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; background-color:  #11D086; transition: transform 0.3s ease;\">\n                    <span id=\"ph-value\" style=\"font-size: 24px; font-weight: 700; color: #FFF;\"></span><span\n                        style=\"font-size: 14px; font-weight: normal; color: #FFF; margin-left: 4px;\">µg/m³</span>\n                </div>\n                <p id=\"ph-status\" style=\"color: #FF6347; font-size: 14px; margin-top: 8px; font-weight: 600;\"></p>\n            </div>\n\n            <!-- Distance Card -->\n            <div id=\"distance-card\"\n                style=\"text-align: center; background-color: #ffffff; border-radius: 12px; padding: 15px; width: 100%; height: 200px; margin-right: 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;\">\n                <h3 style=\"font-size: 18px; color: #333; margin-bottom: 8px; font-weight: 600;\">Ketinggian</h3>\n                <div\n                    style=\"border: 4px solid #288be0; border-radius: 50%; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; background-color: #288be0;\">\n                    <span id=\"distance-value\" style=\"font-size: 24px; font-weight: 700; color: #FFF;\"></span><span\n                        style=\"font-size: 14px; font-weight: normal; color: #FFF; margin-left: 4px;\">cm</span>\n                </div>\n                <p id=\"distance-status\" style=\"color: #FF6347; font-size: 14px; margin-top: 8px; font-weight: 600;\"></p>\n            </div>\n\n            <!-- Turbidity Card -->\n            <div id=\"turbidity-card\"\n                style=\"text-align: center; background-color: #ffffff; border-radius: 12px; padding: 15px; width: 100%; height: 200px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;\">\n                <h3 style=\"font-size: 18px; color: #333; margin-bottom: 8px; font-weight: 600;\">Kejernihan</h3>\n                <div\n                    style=\"border: 4px solid #66a9e3; border-radius: 50%; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; background-color: #66a9e3;\">\n                    <span id=\"turbidity-value\" style=\"font-size: 24px; font-weight: 700; color: #FFF;\"></span><span\n                        style=\"font-size: 14px; font-weight: normal; color: #FFF; margin-left: 4px;\">%</span>\n                </div>\n                <p id=\"turbidity-status\" style=\"color: #32CD32; font-size: 14px; margin-top: 8px; font-weight: 600;\">\n                </p>\n            </div>\n        </div>\n    </div>\n</div>\n<script>\n    (function(scope) {\n        // Watch for updates in the scope to dynamically change values\n        scope.$watch('msg.payload', function(data) { \n            if (data) {\n                // Update PH\n                if (data.ph !== undefined) {  // Periksa apakah data.ph ada\n                    document.getElementById(\"ph-value\").innerHTML = data.ph.value ;  // Ambil nilai dari lastData1\n                    document.getElementById(\"ph-status\").innerHTML = data.ph.status;  // Ambil status dari lastData1\n                    document.getElementById(\"ph-status\").style.color = (data.ph.status === \"Bad\") ? \"red\" : \"green\"; // Atur warna berdasarkan status\n                }\n\n                // Update Ketinggian\n                if (data.jarak !== undefined) {  // Periksa apakah data.jarak ada\n                    document.getElementById(\"distance-value\").innerHTML = data.jarak.value;  // Ambil nilai dari lastData2\n                    document.getElementById(\"distance-status\").innerHTML = data.jarak.status;  // Ambil status dari lastData2\n                    document.getElementById(\"distance-status\").style.color = (data.jarak.status === \"Bad\") ? \"red\" : \"green\"; // Atur warna berdasarkan status\n                }\n\n                // Update Kejernihan\n                if (data.turbidity !== undefined) {  // Periksa apakah data.turbidity ada\n                    document.getElementById(\"turbidity-value\").innerHTML = data.turbidity.value;  // Ambil nilai dari lastData3\n                    document.getElementById(\"turbidity-status\").innerHTML = data.turbidity.status;  // Ambil status dari lastData3\n                    document.getElementById(\"turbidity-status\").style.color = (data.turbidity.status === \"Bad\") ? \"red\" : \"green\"; // Atur warna berdasarkan status\n                }\n            } else {\n                // If no data, reset the UI to empty state\n                document.getElementById(\"ph-value\").innerHTML = \"--\";\n                document.getElementById(\"ph-status\").innerHTML = \"--\";\n                document.getElementById(\"distance-value\").innerHTML = \"--\";\n                document.getElementById(\"distance-status\").innerHTML = \"--\";\n                document.getElementById(\"turbidity-value\").innerHTML = \"--\";\n                document.getElementById(\"turbidity-status\").innerHTML = \"--\";\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 480,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc1b56909674b377",
+        "type": "ui_template",
+        "z": "ad1d688b4c270311",
+        "group": "1d6074d5dac65b3d",
+        "name": "cardAirBaku",
+        "order": 2,
+        "width": 13,
+        "height": 7,
+        "format": "<div style=\"display: flex; justify-content: center; align-items: center; padding: 20px;\">\n    <!-- Wrapper untuk latar belakang semua card -->\n    <div\n        style=\"background-color: #ffffff; padding: 20px; border-radius: 12px; box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1); width: 100%;\">\n        <div style=\"text-align: center; margin-bottom: 10px;\">\n            <h2 style=\"font-size: 24px; font-weight: bold; color: #333; margin: 0;\">Air Baku</h2>\n        </div>\n        <div style=\"display: flex; justify-content: center; align-items: center; gap: 10px;\">\n            <!-- Ketinggian -->\n            <div\n                style=\"text-align: center; background-color: #ffffff; border-radius: 12px; padding: 15px; width: 100%; height: 200px; margin-right: 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);\">\n                <h3 style=\"font-size: 16px; color: #333; margin-bottom: 8px;\">Ketinggian</h3>\n                <div\n                    style=\"border: 4px solid #288be0; border-radius: 50%; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; background-color: #288be0;\">\n                    <span style=\"font-size: 24px; font-weight: bold; color: white;\">{{msg.payload.distance}}</span>\n                    <span style=\"font-size: 12px; font-weight: normal; color: white; margin-left: 4px;\">cm</span>\n                </div>\n                <p\n                    style=\"color: {{msg.distance === 'Good' ? '#32CD32' : '#FF6347'}}; font-size: 12px; margin-top: 8px; font-weight: bold;\">\n                    {{msg.distance}}</p>\n            </div>\n\n            <!-- Relay -->\n            <div\n                style=\"text-align: center; background-color: #ffffff; border-radius: 12px; padding: 15px; width: 100%; height: 200px; display: flex; flex-direction: column; align-items: center; box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);\">\n                <h3 style=\"font-size: 16px; color: #333; margin-bottom: 25px\">Relay Pompa</h3>\n                <div\n                    style=\"border: 4px solid {{msg.relay_status ? '#11D086' : '#FA4032'}}; border-radius: 50%; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; background-color: {{msg.relay_status ? '#11D086' : '#FA4032'}};\">\n                    <span style=\"font-size: 24px; font-weight: bold; color: white\">{{msg.relay_status ? 'ON' : 'OFF'}}</span>\n                </div>\n                <!-- <p\n                    style=\"color: {{msg.relay_status === true ? '#32CD32' : '#FF6347'}}; font-size: 12px; margin-top: 8px; font-weight: bold;\">\n                    {{msg.relay_status === 'ON' ? 'Aktif' : 'Tidak Aktif'}}</p> -->\n            </div>\n        </div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 390,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb1a93265e189cbf",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 39",
+        "func": "// Ambil data payload dari MQTT\nvar data = msg.payload;  // Data yang diterima dari MQTT\n\n// Ambil data terakhir dari context jika ada\nvar lastData1 = context.get('lastPH') || { value: \"--\", status: \"--\" };\nvar lastData2 = context.get('lastDistance') || { value: \"--\", status: \"--\" };\nvar lastData3 = context.get('lastTurbidity') || { value: \"--\", status: \"--\" };\n\n// Fungsi untuk parsing nilai dan menghapus unit (e.g., \"V\", \"A\", \"kWh\", \"Hz\")\nfunction parseValue(value) {\n    if (typeof value === \"string\") {\n        return parseFloat(value.replace(/[^\\d.-]/g, \"\")) || 0; // Parsing string\n    } else if (typeof value === \"number\") {\n        return value; // Jika sudah berupa angka, langsung gunakan\n    }\n    return 0; // Jika null atau tipe data lain, kembalikan 0\n}\n\n// Proses data untuk PH\nif (data.pH !== undefined) {\n    var ph = parseValue(data.pH); // Parse nilai pH\n    var phStatus = ph < 7 ? \"Bad\" : \"Good\"; // Tentukan status berdasarkan nilai pH\n    lastData1 = { value: ph.toFixed(2), status: phStatus }; // Set nilai dan status PH\n    context.set('lastPH', lastData1); // Simpan di context\n} else {\n    node.warn(\"Data untuk pH tidak ditemukan.\");\n}\n\n// Proses data untuk Ketinggian (jarak)\nif (data.jarak !== undefined) {\n    var distance = parseValue(data.jarak); // Parse nilai jarak\n    var distanceStatus = distance >= 500 ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan jarak\n    lastData2 = { value: distance.toFixed(2), status: distanceStatus }; // Set nilai dan status jarak\n    context.set('lastDistance', lastData2); // Simpan di context\n} else {\n    node.warn(\"Data untuk jarak tidak ditemukan.\");\n}\n\n// Proses data untuk Kejernihan (turbidity)\nif (data.turbidity !== undefined) {\n    var turbidity = parseValue(data.turbidity); // Parse nilai turbidity\n    var turbidityStatus = turbidity < 50 ? \"Bad\" : \"Good\"; // Tentukan status berdasarkan turbidity\n    lastData3 = { value: turbidity.toFixed(2), status: turbidityStatus }; // Set nilai dan status turbidity\n    context.set('lastTurbidity', lastData3); // Simpan di context\n} else {\n    node.warn(\"Data untuk turbidity tidak ditemukan.\");\n}\n\n// Siapkan payload untuk dikirim ke UI\nmsg.payload = {\n    ph: lastData1, // Data untuk pH\n    jarak: lastData2, // Data untuk ketinggian\n    turbidity: lastData3 // Data untuk kejernihan\n};\n\n// Kembalikan msg untuk diproses lebih lanjut\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "109ffa583b3c0620"
+            ]
+        ]
+    },
+    {
+        "id": "570de2371ac9a43c",
+        "type": "ui_template",
+        "z": "ad1d688b4c270311",
+        "group": "1d6074d5dac65b3d",
+        "name": "grafikKetinggianBersih",
+        "order": 4,
+        "width": 8,
+        "height": 7,
+        "format": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Grafik Ketinggian Air</title>\n    <script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n</head>\n\n<body>\n    <div\n        style=\"display: flex; flex-direction: column; align-items: flex-start; gap: 10px; width: 325px; border-radius: 10px; background: #F5F5F5; padding: 10px 12px 12px 12px; max-width: 100%; margin: auto; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); background-image: url('https://cdn.pixabay.com/photo/2020/02/21/15/31/view-4867846_1280.jpg');\">\n        <div\n            style=\"width: 100%; height: 270px; background-color: #FFFFFF; border-radius: 10px; padding: 15px; box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); margin: auto;\">\n\n            <!-- Judul Grafik -->\n            <h3 style=\"text-align: center; margin-bottom: 10px; font-size: 16px;\">Ketinggian Air (cm)</h3>\n            <canvas id=\"waterLevelChart\"></canvas>\n        </div>\n    </div>\n\n    <script>\n        // Inisialisasi data untuk grafik\n        var chartData = {\n            labels: Array(10).fill(\"\"), // Label kosong untuk menjaga ukuran tetap\n            datasets: [\n                {\n                    label: \"Ketinggian Air (cm)\",\n                    data: Array(10).fill(0), // Data awal dengan nilai 0\n                    backgroundColor: \"rgba(0, 123, 255, 0.8)\", // Warna biru lebih terang\n                    borderColor: \"rgba(0, 102, 204, 1)\", // Warna biru border\n                    borderWidth: 1,\n                    maxBarThickness: 20 // Batas ketebalan maksimum bar\n                },\n                {\n                    label: \"Batas Atas (200 cm)\",\n                    data: Array(10).fill(200), // Nilai batas atas tetap (200 cm)\n                    type: 'line',\n                    borderColor: \"#FF5733\", // Warna merah oranye untuk batas\n                    borderWidth: 2,\n                    pointRadius: 0,\n                    fill: false\n                }\n            ]\n        };\n\n        // Konfigurasi opsi grafik\n        var options = {\n            responsive: true,\n            maintainAspectRatio: false,\n            scales: {\n                x: { \n                    title: { display: true, text: 'Waktu', color: '#555', font: { size: 10 } },\n                    ticks: { autoSkip: false, font: { size: 10 } } // Jangan lewati label\n                },\n                y: { \n                    title: { display: true, text: 'Ketinggian Air (cm)', color: '#555', font: { size: 10 } },\n                    beginAtZero: true, // Mulai dari 0\n                    max: 250, // Skala maksimum untuk menyesuaikan batas atas\n                    ticks: { font: { size: 10 } }\n                },\n            },\n            plugins: {\n                legend: { display: true, labels: { font: { size: 10 } } },\n                tooltip: { callbacks: { label: function(context) { return context.raw + ' cm'; } } }\n            }\n        };\n\n        // Buat grafik menggunakan Chart.js\n        var ctx = document.getElementById('waterLevelChart').getContext('2d');\n        var waterLevelChart = new Chart(ctx, { type: 'bar', data: chartData, options: options });\n\n        // Fungsi untuk memperbarui grafik dengan data baru\n        function updateChart(data) {\n            if (data.label && data.value !== undefined) {\n                // Tambahkan nilai ke data\n                chartData.labels.push(data.label); // Tambahkan waktu\n                chartData.datasets[0].data.push(data.value); // Tambahkan nilai ketinggian air\n                chartData.datasets[1].data.push(200); // Tambahkan nilai batas atas (200)\n\n                // Batasi jumlah data agar tetap 10 elemen\n                if (chartData.labels.length > 10) {\n                    chartData.labels.shift();\n                    chartData.datasets[0].data.shift();\n                    chartData.datasets[1].data.shift();\n                }\n\n                // Perbarui grafik\n                waterLevelChart.update();\n            }\n        }\n\n        // Mendapatkan data dari Node-RED (msg.payload)\n        (function(scope) {\n            scope.$watch('msg.payload', function(newVal) {\n                if (newVal) {\n                    const timeLabel = new Date().toLocaleTimeString([], {\n                    hour: '2-digit',\n                    minute: '2-digit',\n                    hour12: false \n                    });\n                    updateChart({ label: timeLabel, value: parseFloat(newVal) }); // Perbarui grafik dengan data MQTT\n                }\n            });\n        })(scope);\n    </script>\n</body>\n\n</html>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3cfd6e83b0576ad3",
+        "type": "ui_template",
+        "z": "ad1d688b4c270311",
+        "group": "1d6074d5dac65b3d",
+        "name": "grafikPHBersih",
+        "order": 3,
+        "width": 9,
+        "height": 7,
+        "format": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Grafik pH Air</title>\n    <script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n</head>\n\n<body>\n    <div\n        style=\"display: flex; flex-direction: column; align-items: flex-start; gap: 10px; width: 325px; border-radius: 10px; background: #F5F5F5; padding: 10px 12px 12px 12px; max-width: 100%; margin: auto; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); background-image: url('https://cdn.pixabay.com/photo/2020/02/21/15/31/view-4867846_1280.jpg');\">\n        <div\n            style=\"width: 100%; height: 270px; background-color: #FFFFFF; border-radius: 10px; padding: 15px; box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); margin: auto;\">\n\n            <!-- Judul Grafik -->\n            <h3 style=\"text-align: center; margin-bottom: 10px; font-size: 16px;\">pH Air</h3>\n            <canvas id=\"phWaterChart\"></canvas>\n        </div>\n    </div>\n\n    <script>\n        // Inisialisasi data untuk grafik\n        var chartDataPH = {\n            labels: Array(10).fill(\"\"), // Label kosong untuk menjaga ukuran tetap\n            datasets: [\n                {\n                    label: \"pH Air\",\n                    data: Array(10).fill(null), // Data awal kosong\n                    backgroundColor: \"rgba(0, 200, 83, 0.8)\", // Warna hijau terang\n                    borderColor: \"rgba(0, 150, 50, 1)\", // Warna hijau border\n                    borderWidth: 1,\n                    maxBarThickness: 20 // Batas ketebalan maksimum bar\n                },\n                {\n                    label: \"Batas Atas pH (8.5)\",\n                    data: Array(10).fill(8.5), // Nilai batas atas tetap (8.5)\n                    type: 'line',\n                    borderColor: \"#FF5733\", // Warna merah oranye untuk batas\n                    borderWidth: 2,\n                    pointRadius: 0,\n                    fill: false\n                },\n                {\n                    label: \"Batas Bawah pH (6.5)\",\n                    data: Array(10).fill(6.5), // Nilai batas bawah tetap (6.5)\n                    type: 'line',\n                    borderColor: \"#FFC300\", // Warna kuning untuk batas bawah\n                    borderWidth: 2,\n                    pointRadius: 0,\n                    fill: false\n                }\n            ]\n        };\n\n        // Konfigurasi opsi grafik\n        var optionsPH = {\n            responsive: true,\n            maintainAspectRatio: false,\n            scales: {\n                x: { \n                    title: { display: true, text: 'Waktu', color: '#555', font: { size: 10 } },\n                    ticks: { autoSkip: false, font: { size: 10 } } // Jangan lewati label\n                },\n                y: { \n                    title: { display: true, text: 'pH', color: '#555', font: { size: 10 } },\n                    beginAtZero: true, // Mulai dari 0\n                    max: 10, // Skala maksimum untuk pH\n                    ticks: { font: { size: 10 } }\n                },\n            },\n            plugins: {\n                legend: { display: true, labels: { font: { size: 10 } } },\n                tooltip: { callbacks: { label: function(context) { return context.raw + ' pH'; } } }\n            }\n        };\n\n        // Buat grafik menggunakan Chart.js\n        var ctxPH = document.getElementById('phWaterChart').getContext('2d');\n        var phWaterChart = new Chart(ctxPH, { type: 'bar', data: chartDataPH, options: optionsPH });\n\n        // Fungsi untuk memperbarui grafik dengan data baru\n        function updateChartPH(data) {\n            if (data.label && data.value !== undefined) {\n                // Tambahkan nilai ke data\n                chartDataPH.labels.push(data.label); // Tambahkan waktu\n                chartDataPH.datasets[0].data.push(data.value); // Tambahkan nilai pH\n                chartDataPH.datasets[1].data.push(8.5); // Tambahkan nilai batas atas (8.5)\n                chartDataPH.datasets[2].data.push(6.5); // Tambahkan nilai batas bawah (6.5)\n\n                // Batasi jumlah data agar tetap 10 elemen\n                if (chartDataPH.labels.length > 10) {\n                    chartDataPH.labels.shift();\n                    chartDataPH.datasets[0].data.shift();\n                    chartDataPH.datasets[1].data.shift();\n                    chartDataPH.datasets[2].data.shift();\n                }\n\n                // Perbarui grafik\n                phWaterChart.update();\n            }\n        }\n\n        // Mendapatkan data dari Node-RED (msg.payload)\n        (function(scope) {\n            scope.$watch('msg.payload', function(newVal) {\n                if (newVal) {\n                    const timeLabel = new Date().toLocaleTimeString([], {\n                    hour: '2-digit',\n                    minute: '2-digit',\n                    hour12: false\n                });\n                    updateChartPH({ label: timeLabel, value: parseFloat(newVal) }); // Perbarui grafik dengan data MQTT\n                }\n            });\n        })(scope);\n    </script>\n</body>\n\n</html>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 480,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22f45943506719e8",
+        "type": "ui_template",
+        "z": "ad1d688b4c270311",
+        "group": "1d6074d5dac65b3d",
+        "name": "grafikKejernihanBersih",
+        "order": 6,
+        "width": 17,
+        "height": 7,
+        "format": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Grafik Kejernihan Air</title>\n    <script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n</head>\n\n<body>\n    <div\n        style=\"display: flex; flex-direction: column; align-items: flex-start; gap: 10px; width: 600px; border-radius: 10px; background: #F5F5F5; padding: 12px; width: 80%; margin: auto; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); background-image: url('https://cdn.pixabay.com/photo/2020/02/21/15/31/view-4867846_1280.jpg');\">\n        <div\n            style=\"width: 100%; height: 270px; background-color: #FFFFFF; border-radius: 10px; padding: 15px; box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); margin: auto;\">\n\n            <!-- Judul Grafik -->\n            <h3 style=\"text-align: center; margin-bottom: 10px; font-size: 16px;\">Grafik Kejernihan Air</h3>\n            <canvas id=\"clarityWaterChart\"></canvas>\n        </div>\n    </div>\n\n    <script>\n        // Inisialisasi data untuk grafik\n        var chartDataClarity = {\n            labels: Array(10).fill(\"\"), // Label kosong untuk menjaga ukuran tetap\n            datasets: [\n                {\n                    label: \"Kejernihan Air (%)\",\n                    data: Array(10).fill(null), // Data awal kosong\n                    backgroundColor: \"rgba(54, 162, 235, 0.8)\", // Warna biru terang\n                    borderColor: \"rgba(54, 162, 235, 1)\", // Warna biru border\n                    borderWidth: 1,\n                    maxBarThickness: 20 // Batas ketebalan maksimum bar\n                },\n                {\n                    label: \"Batas Minimum (%)\",\n                    data: Array(10).fill(30), // Nilai batas minimum tetap (30%)\n                    type: 'line',\n                    borderColor: \"#FF5733\", // Warna merah untuk batas\n                    borderWidth: 2,\n                    pointRadius: 0,\n                    fill: false\n                }\n            ]\n        };\n\n        // Konfigurasi opsi grafik\n        var optionsClarity = {\n            responsive: true,\n            maintainAspectRatio: false,\n            scales: {\n                x: { \n                    title: { display: true, text: 'Waktu', color: '#555', font: { size: 10 } },\n                    ticks: { autoSkip: false, font: { size: 10 } } // Jangan lewati label\n                },\n                y: { \n                    title: { display: true, text: 'Kejernihan (%)', color: '#555', font: { size: 10 } },\n                    beginAtZero: true, // Mulai dari 0\n                    max: 100, // Skala maksimum untuk kejernihan air\n                    ticks: { font: { size: 10 } }\n                },\n            },\n            plugins: {\n                legend: { display: true, labels: { font: { size: 10 } } },\n                tooltip: { callbacks: { label: function(context) { return context.raw + ' %'; } } }\n            }\n        };\n\n        // Buat grafik menggunakan Chart.js\n        var ctxClarity = document.getElementById('clarityWaterChart').getContext('2d');\n        var clarityWaterChart = new Chart(ctxClarity, { type: 'bar', data: chartDataClarity, options: optionsClarity });\n\n        // Fungsi untuk memperbarui grafik dengan data baru\n        function updateChartClarity(data) {\n            if (data.label && data.value !== undefined) {\n                // Tambahkan nilai ke data\n                chartDataClarity.labels.push(data.label); // Tambahkan waktu\n                chartDataClarity.datasets[0].data.push(data.value); // Tambahkan nilai kejernihan\n                chartDataClarity.datasets[1].data.push(30); // Tambahkan nilai batas minimum (30%)\n\n                // Batasi jumlah data agar tetap 10 elemen\n                if (chartDataClarity.labels.length > 10) {\n                    chartDataClarity.labels.shift();\n                    chartDataClarity.datasets[0].data.shift();\n                    chartDataClarity.datasets[1].data.shift();\n                }\n\n                // Perbarui grafik\n                clarityWaterChart.update();\n            }\n        }\n\n        // Mendapatkan data dari Node-RED (msg.payload)\n        (function(scope) {\n            scope.$watch('msg.payload', function(newVal) {\n                if (newVal) {\n                    const timeLabel = new Date().toLocaleTimeString([], {\n                    hour: '2-digit',\n                    minute: '2-digit',\n                    hour12: false // Menonaktifkan format AM/PM, menggunakan format 24 jam\n                    }); // Label waktu\n                    updateChartClarity({ label: timeLabel, value: parseFloat(newVal) }); // Perbarui grafik dengan data MQTT\n                }\n            });\n        })(scope);\n    </script>\n</body>\n\n</html>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4cfdab2073a50a7f",
+        "type": "ui_template",
+        "z": "ad1d688b4c270311",
+        "group": "1d6074d5dac65b3d",
+        "name": "grafikKetinggianKotor",
+        "order": 5,
+        "width": 13,
+        "height": 7,
+        "format": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Grafik Ketinggian Air Kotor</title>\n    <script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>\n</head>\n\n<body>\n    <div\n        style=\"display: flex; flex-direction: column; align-items: flex-start; gap: 10px; width: 600px; border-radius: 10px; background: #F5F5F5; padding: 10px 12px 12px 12px; max-width: 100%; margin: auto; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); background-image: url('https://cdn.pixabay.com/photo/2020/02/21/15/31/view-4867846_1280.jpg');\">\n        <div\n            style=\"width: 100%; height: 270px; background-color: #FFFFFF; border-radius: 10px; padding: 15px; box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); margin: auto;\">\n\n            <!-- Judul Grafik -->\n            <h3 style=\"text-align: center; margin-bottom: 10px; font-size: 16px;\">Grafik Ketinggian Air Kotor</h3>\n            <canvas id=\"dirtyWaterLevelChart\"></canvas>\n        </div>\n    </div>\n\n    <script>\n        // Inisialisasi data untuk grafik\n        var chartDataDirtyWater = {\n            labels: Array(10).fill(\"\"), // Label kosong untuk menjaga ukuran tetap\n            datasets: [\n                {\n                    label: \"Ketinggian Air Kotor (cm)\",\n                    data: Array(10).fill(null), // Data awal kosong\n                    backgroundColor: \"rgba(153, 102, 255, 0.8)\", // Warna ungu terang\n                    borderColor: \"rgba(153, 102, 255, 1)\", // Warna ungu border\n                    borderWidth: 1,\n                    maxBarThickness: 20 // Batas ketebalan maksimum bar\n                },\n                {\n                    label: \"Batas Maksimum (200 cm)\",\n                    data: Array(10).fill(200), // Nilai batas maksimum tetap (200 cm)\n                    type: 'line',\n                    borderColor: \"#FF5733\", // Warna merah untuk batas\n                    borderWidth: 2,\n                    pointRadius: 0,\n                    fill: false\n                }\n            ]\n        };\n\n        // Konfigurasi opsi grafik\n        var optionsDirtyWater = {\n            responsive: true,\n            maintainAspectRatio: false,\n            scales: {\n                x: { \n                    title: { display: true, text: 'Waktu', color: '#555', font: { size: 10 } },\n                    ticks: { autoSkip: false, font: { size: 10 } } // Jangan lewati label\n                },\n                y: { \n                    title: { display: true, text: 'Ketinggian Air Kotor (cm)', color: '#555', font: { size: 10 } },\n                    beginAtZero: true, // Mulai dari 0\n                    max: 250, // Skala maksimum untuk ketinggian air kotor\n                    ticks: { font: { size: 10 } }\n                },\n            },\n            plugins: {\n                legend: { display: true, labels: { font: { size: 10 } } },\n                tooltip: { callbacks: { label: function(context) { return context.raw + ' cm'; } } }\n            }\n        };\n\n        // Buat grafik menggunakan Chart.js\n        var ctxDirtyWater = document.getElementById('dirtyWaterLevelChart').getContext('2d');\n        var dirtyWaterLevelChart = new Chart(ctxDirtyWater, { type: 'bar', data: chartDataDirtyWater, options: optionsDirtyWater });\n\n        // Fungsi untuk memperbarui grafik dengan data baru\n        function updateChartDirtyWater(data) {\n            if (data.label && data.value !== undefined) {\n                // Tambahkan nilai ke data\n                chartDataDirtyWater.labels.push(data.label); // Tambahkan waktu\n                chartDataDirtyWater.datasets[0].data.push(data.value); // Tambahkan nilai ketinggian air kotor\n                chartDataDirtyWater.datasets[1].data.push(200); // Tambahkan nilai batas maksimum (200 cm)\n\n                // Batasi jumlah data agar tetap 10 elemen\n                if (chartDataDirtyWater.labels.length > 10) {\n                    chartDataDirtyWater.labels.shift();\n                    chartDataDirtyWater.datasets[0].data.shift();\n                    chartDataDirtyWater.datasets[1].data.shift();\n                }\n\n                // Perbarui grafik\n                dirtyWaterLevelChart.update();\n            }\n        }\n\n        // Mendapatkan data dari Node-RED (msg.payload)\n        (function(scope) {\n            scope.$watch('msg.payload', function(newVal) {\n                if (newVal) {\n                const timeLabel = new Date().toLocaleTimeString([], {\n                hour: '2-digit',\n                minute: '2-digit',\n                hour12: false\n                });\n                updateChartDirtyWater({ label: timeLabel, value: parseFloat(newVal) }); // Perbarui grafik dengan data MQTT\n                }\n            });\n        })(scope);\n    </script>\n</body>\n\n</html>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6b0792857b6a23d",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 41",
+        "func": "// Ambil payload (data JSON) dari msg.payload\nvar data = msg.payload;\n\n// Periksa apakah data memiliki properti turbidity\nif (data.distance !== undefined) {\n    // Ambil nilai turbidity\n    var distanceValue = data.distance;\n\n    // Set nilai turbidity ke dalam msg.payload\n    msg.payload = distanceValue;\n\n    // Mengirimkan msg ke node berikutnya\n    return msg;\n} else {\n    // Jika turbidity tidak ada, beri pesan error atau default value\n    msg.payload = \"Distance data not available\";\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 860,
+        "wires": [
+            [
+                "4cfdab2073a50a7f"
+            ]
+        ]
+    },
+    {
+        "id": "606e09d49240d34d",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 44",
+        "func": "// Ambil payload (data JSON) dari msg.payload\nvar data = msg.payload;\n\n// Periksa apakah data memiliki properti turbidity\nif (data.turbidity !== undefined) {\n    // Ambil nilai turbidity\n    var turbidityValue = data.turbidity;\n\n    // Set nilai turbidity ke dalam msg.payload\n    msg.payload = turbidityValue;\n\n    // Mengirimkan msg ke node berikutnya\n    return msg;\n} else {\n    // Jika turbidity tidak ada, beri pesan error atau default value\n    msg.payload = \"Turbidity data not available\";\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "22f45943506719e8"
+            ]
+        ]
+    },
+    {
+        "id": "e6f8b03167e7fd89",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 45",
+        "func": "// Ambil payload (data JSON) dari msg.payload\nvar data = msg.payload;\n\n// Periksa apakah data memiliki properti turbidity\nif (data.jarak !== undefined) {\n    // Ambil nilai turbidity\n    var jarakValue = data.jarak;\n\n    // Set nilai turbidity ke dalam msg.payload\n    msg.payload = jarakValue;\n\n    // Mengirimkan msg ke node berikutnya\n    return msg;\n} else {\n    // Jika turbidity tidak ada, beri pesan error atau default value\n    msg.payload = \"ketinggian data not available\";\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "570de2371ac9a43c"
+            ]
+        ]
+    },
+    {
+        "id": "256a3b17e0cadc33",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 46",
+        "func": "// Ambil payload (data JSON) dari msg.payload\nvar data = msg.payload;\n\n// Periksa apakah data memiliki properti turbidity\nif (data.pH !== undefined) {\n    // Ambil nilai turbidity\n    var pHValue = data.pH;\n\n    // Set nilai turbidity ke dalam msg.payload\n    msg.payload = pHValue;\n\n    // Mengirimkan msg ke node berikutnya\n    return msg;\n} else {\n    // Jika turbidity tidak ada, beri pesan error atau default value\n    msg.payload = \"Ph data not available\";\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 580,
+        "wires": [
+            [
+                "3cfd6e83b0576ad3"
+            ]
+        ]
+    },
+    {
+        "id": "7178e26837051366",
+        "type": "postgresql",
+        "z": "ad1d688b4c270311",
+        "name": "AIR BAKU",
+        "query": "SELECT * FROM \"AIR BAKU\";",
+        "postgreSQLConfig": "c90da4cfb3d2fe34",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 550,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "079bb83a7b329873",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 61",
+        "func": "// Ambil data payload dari MQTT\nvar data = msg.payload; // Data yang diterima dari MQTT\n\n// Fungsi untuk parsing nilai dan menghapus unit (e.g., \"V\", \"A\", \"kWh\", \"Hz\")\nfunction parseValue(value) {\n    if (typeof value === \"string\") {\n        return parseFloat(value.replace(/[^\\d.-]/g, \"\")) || 0; // Parsing string\n    } else if (typeof value === \"number\") {\n        return value; // Jika sudah berupa angka, langsung gunakan\n    }\n    return 0; // Jika null atau tipe data lain, kembalikan 0\n}\n\n// Siapkan array untuk menyimpan pesan bad\nvar alerts = [];\n\n// Proses data untuk pH\nif (data.pH !== undefined) {\n    var ph = parseValue(data.pH); // Parse nilai pH\n    var phStatus = ph < 7 ? \"Bad\" : \"Good\"; // Tentukan status berdasarkan nilai pH\n\n    // Jika status \"Bad\", tambahkan pesan ke array\n    if (phStatus === \"Bad\") {\n        alerts.push(\"Warning: pH berada pada kondisi buruk!\");\n    }\n} else {\n    node.warn(\"Data untuk pH tidak ditemukan.\");\n}\n\n// Proses data untuk Ketinggian (jarak)\nif (data.jarak !== undefined) {\n    var distance = parseValue(data.jarak); // Parse nilai jarak\n    var distanceStatus = distance >= 500 ? \"Good\" : \"Bad\"; // Tentukan status berdasarkan jarak\n\n    // Jika status \"Bad\", tambahkan pesan ke array\n    if (distanceStatus === \"Bad\") {\n        alerts.push(\"Warning: Jarak berada pada kondisi buruk!\");\n    }\n} else {\n    node.warn(\"Data untuk jarak tidak ditemukan.\");\n}\n\n// Proses data untuk Kejernihan (turbidity)\nif (data.turbidity !== undefined) {\n    var turbidity = parseValue(data.turbidity); // Parse nilai turbidity\n    var turbidityStatus = turbidity < 50 ? \"Bad\" : \"Good\"; // Tentukan status berdasarkan turbidity\n\n    // Jika status \"Bad\", tambahkan pesan ke array\n    if (turbidityStatus === \"Bad\") {\n        alerts.push(\"Warning: Kejernihan (turbidity) berada pada kondisi buruk!\");\n    }\n} else {\n    node.warn(\"Data untuk turbidity tidak ditemukan.\");\n}\n\n// Hanya kembalikan pesan peringatan (alerts)\nmsg.payload = alerts;\n\n// Kembalikan pesan jika ada alert\nif (alerts.length > 0) {\n    node.warn(\"Kondisi buruk terdeteksi: \" + alerts.join(\", \"));\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 640,
+        "wires": [
+            [
+                "a51418da4a0ebabb",
+                "a7cc738517382938"
+            ]
+        ]
+    },
+    {
+        "id": "28e05d817d8117d2",
+        "type": "telegram sender",
+        "z": "ad1d688b4c270311",
+        "name": "Telegram notifikasi",
+        "bot": "",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a51418da4a0ebabb",
+        "type": "function",
+        "z": "ad1d688b4c270311",
+        "name": "function 62",
+        "func": "// Ambil data payload yang diterima\nvar test = msg.payload;\n\n// Jika test adalah array, gabungkan menjadi satu string dengan baris baru sebagai pemisah\nif (Array.isArray(test)) {\n    test = test.join(\"\\n\"); // Gabungkan array menjadi string dengan baris baru\n} else if (typeof test !== \"string\" || test.trim() === \"\") {\n    // Jika test kosong atau tidak valid, beri nilai default\n    test = \"No alerts detected.\"; // Pesan default jika tidak ada data\n}\n\n// Bentuk ulang msg.payload untuk Telegram\nmsg.payload = {\n    chatId: 1383569350, // Ganti dengan Chat ID Anda\n    type: \"message\",\n    content: test // Pesan teks yang akan dikirim\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 700,
+        "wires": [
+            [
+                "28e05d817d8117d2"
+            ]
+        ]
+    },
+    {
+        "id": "a7cc738517382938",
+        "type": "e-mail",
+        "z": "ad1d688b4c270311",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 470,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "41820c730b9722f6",
+        "type": "postgresql",
+        "z": "ad1d688b4c270311",
+        "name": "AIR BERSIH",
+        "query": "SELECT * FROM \"AIR BAKU\";",
+        "postgreSQLConfig": "c90da4cfb3d2fe34",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5bdc58e56d021870",
+        "type": "ui_template",
+        "z": "5e4b7d830ab33aac",
+        "group": "cf223f014f6a6cec",
+        "name": "TabelAirBersih",
+        "order": 1,
+        "width": 30,
+        "height": 14,
+        "format": "<div style=\"margin-bottom: 10px;\">\n  <button ng-click=\"downloadTableCSV()\">Download Table Data as CSV</button>\n</div>\n\n<table border=\"1\" style=\"width: 100%; border-collapse: collapse; position: relative;\">\n  <thead style=\"background-color: #4CAF50; color: white; position: sticky; top: 0; z-index: 1;\">\n    <tr>\n      <th>TimeStamp</th>\n      <th>PH</th>\n      <th>Jarak</th>\n      <th>Turbidity</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr ng-repeat=\"row in msg.payload\">\n      <td>{{row.TimeStamp | date:'HH:mm':'UTC+7'}}</td>\n      <td>{{row.PH}}</td>\n      <td>{{row.Jarak}}</td>\n      <td>{{row.Turbidity}}</td>\n    </tr>\n  </tbody>\n</table>\n\n<!-- Styles -->\n<style>\n  /* General table styles */\n  table {\n    font-family: 'Arial', sans-serif;\n    border: 1px solid #ddd;\n    border-radius: 8px;\n    width: 100%;\n    margin-top: 20px;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n    background-color: #fff;\n  }\n\n  th,\n  td {\n    padding: 12px;\n    text-align: center;\n    font-size: 16px;\n    color: #333;\n  }\n\n  th {\n    background-color: #4CAF50;\n    /* Green background for header */\n    color: white;\n    font-weight: bold;\n  }\n\n  tr:nth-child(even) {\n    background-color: #f2f2f2;\n  }\n\n  tr:hover {\n    background-color: #e0e0e0;\n  }\n\n  /* Button styles */\n  button {\n    padding: 10px 20px;\n    background-color: #4CAF50;\n    color: white;\n    border: none;\n    cursor: pointer;\n    font-size: 16px;\n    border-radius: 5px;\n    transition: background-color 0.3s ease;\n  }\n\n  button:hover {\n    background-color: #45a049;\n  }\n\n  /* Styling for table headers */\n  thead th {\n    padding: 15px;\n    font-size: 18px;\n  }\n\n</style>\n\n<script>\n  (function(scope) {\n  scope.downloadTableCSV = function() {\n  // Ambil seluruh data dari tabel\n  const rows = scope.msg.payload;\n  \n  // Format data menjadi CSV\n  let csvContent = \"TimeStamp,PH,Jarak,Turbidity\\n\"; // Header\n  rows.forEach(row => {\n  csvContent += `${row.TimeStamp},${row.PH},${row.Jarak},${row.Turbidity}\\n`; // Corrected line\n  });\n  \n  // Buat Blob untuk file CSV\n  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });\n  \n  // Buat elemen untuk download\n  const link = document.createElement('a');\n  const url = URL.createObjectURL(blob);\n  link.setAttribute('href', url);\n  link.setAttribute('download', 'table.csv');\n  document.body.appendChild(link);\n  link.click();\n  document.body.removeChild(link);\n  };\n  })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 820,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49a440990712b425",
+        "type": "ui_template",
+        "z": "5e4b7d830ab33aac",
+        "group": "cf223f014f6a6cec",
+        "name": "TabelAirKotor",
+        "order": 5,
+        "width": 30,
+        "height": 13,
+        "format": "<div style=\"margin-bottom: 10px;\">\n  <button ng-click=\"downloadTableCSV()\">Download Table Data as CSV</button>\n</div>\n\n<table border=\"1\" style=\"width: 100%; border-collapse: collapse;\">\n    <thead style=\"background-color: #4CAF50; color: white; position: sticky; top: 0; z-index: 1;\">\n    <tr>\n      <th>TimeStamp</th>\n      <th>Jarak</th>\n      <th>Relay</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr ng-repeat=\"row in msg.payload\">\n      <td>{{row.TimeStamp}}</td>\n      <td>{{row.Jarak}}</td>\n      <td>{{row.Relay}}</td>\n    </tr>\n  </tbody>\n</table>\n\n<script>\n  (function(scope) {\n        scope.downloadTableCSV = function() {\n            // Ambil seluruh data dari tabel\n            const rows = scope.msg.payload;\n\n            // Format data menjadi CSV\n            let csvContent = \"TimeStamp,Jarak,Relay\\n\"; // Header\n            rows.forEach(row => {\n                csvContent += `${row.TimeStamp},${row.Jarak},${row.Relay}\\n`; // Corrected line with template literals\n            });\n\n            // Buat Blob untuk file CSV\n            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });\n\n            // Buat elemen untuk download\n            const link = document.createElement('a');\n            const url = URL.createObjectURL(blob);\n            link.setAttribute('href', url);\n            link.setAttribute('download', 'table.csv');\n            document.body.appendChild(link);\n            link.click();\n            document.body.removeChild(link);\n        };\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42425ebfbca14808",
+        "type": "postgresql",
+        "z": "5e4b7d830ab33aac",
+        "name": "PEMANTUAN AIR PINDAD",
+        "query": "SELECT * FROM \"PEMANTAUAN AIR PINDAD\";",
+        "postgreSQLConfig": "c90da4cfb3d2fe34",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "db2ed988d8af673a"
+            ]
+        ]
+    },
+    {
+        "id": "db2ed988d8af673a",
+        "type": "function",
+        "z": "5e4b7d830ab33aac",
+        "name": "function 59",
+        "func": "const rows = msg.payload;\nmsg.payload = rows.map(row => ({\n  TimeStamp: row.Timestamp,\n  PH: row.pH,\n  Jarak: row.jarak,\n  Turbidity: row.turbidity\n}));\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "5bdc58e56d021870"
+            ]
+        ]
+    },
+    {
+        "id": "3515f62cfb880c3c",
+        "type": "postgresql",
+        "z": "5e4b7d830ab33aac",
+        "name": "AIR BAKU",
+        "query": "SELECT * FROM \"AIR BAKU\";\n",
+        "postgreSQLConfig": "c90da4cfb3d2fe34",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 290,
+        "y": 300,
+        "wires": [
+            [
+                "0326402712d4c6e8"
+            ]
+        ]
+    },
+    {
+        "id": "0326402712d4c6e8",
+        "type": "function",
+        "z": "5e4b7d830ab33aac",
+        "name": "function 60",
+        "func": "const rows = msg.payload;\nmsg.payload = rows.map(row => ({\n  TimeStamp: row.timestamp,\n  Jarak: row.jarak, \n  Relay: row.relay\n}));\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 300,
+        "wires": [
+            [
+                "49a440990712b425"
+            ]
+        ]
+    },
+    {
+        "id": "449ae66e8dbb8b78",
+        "type": "mqtt in",
+        "z": "5e4b7d830ab33aac",
+        "name": "",
+        "topic": "sensor/air",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 220,
+        "wires": [
+            [
+                "42425ebfbca14808"
+            ]
+        ]
+    },
+    {
+        "id": "0251201bf262ee7c",
+        "type": "mqtt in",
+        "z": "5e4b7d830ab33aac",
+        "name": "",
+        "topic": "sensor/air",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 300,
+        "wires": [
+            [
+                "3515f62cfb880c3c"
+            ]
+        ]
+    },
+    {
+        "id": "135c57bf40d6b3b2",
+        "type": "mqtt out",
+        "z": "1575464466fc78c7",
+        "name": "",
+        "topic": "monitoringenergy/delay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1f90e14f92c8adab",
+        "x": 450,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "88507561e1da8089",
+        "type": "ui_template",
+        "z": "1575464466fc78c7",
+        "group": "85e3da5ffb6a1005",
+        "name": "SettingAirBersih",
+        "order": 1,
+        "width": 13,
+        "height": 4,
+        "format": "<div>\n  <h2 style=\"text-align: center; padding-bottom: 20px; \">Setting Air Bersih</h2>\n</div>\n<div\n  style=\"padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 4px 4px 10px rgba(0, 0, 0.1, 0.1); text-align: center;\">\n  <h2 style=\"margin-bottom: 20px; color: #333; font-family: arial; font-size: 18px;\">Set Delay Time</h2>\n  <div style=\"display: flex; align-items: center; justify-content: center;\">\n    <input\n      id=\"delayInput\"\n      type=\"number\"\n      placeholder=\"Enter delay in second\"\n      style=\"flex: 1; padding: 10px 15px; font-size: 16px; border: 2px solid #ccc; border-radius: 8px; margin-right: 10px; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);\"\n    >\n    <button\n      id=\"resetButton\"\n      style=\"background-color: #0B2F9F; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.2s;\"\n    >\n      Reset\n    </button>\n  </div>\n</div>\n\n<script>\n  (function(scope) {\n    document.getElementById('resetButton').addEventListener('click', function() {\n      const delayValue = document.getElementById('delayInput').value;\n      if (delayValue !== '') {\n        scope.send({ payload: Number(delayValue) });\n        document.getElementById('delayInput').value = ''; // Reset input field\n        alert('Delay set successfully!');\n      } else {\n        alert('Please enter a delay value.');\n      }\n    });\n\n    // Animasi hover pada tombol\n    const button = document.getElementById('resetButton');\n    button.addEventListener('mouseover', function() {\n      button.style.backgroundColor = '#0056b3'; // Warna lebih gelap saat hover\n    });\n    button.addEventListener('mouseout', function() {\n      button.style.backgroundColor = '#0B2F9F'; // Warna kembali normal\n    });\n    button.addEventListener('mousedown', function() {\n      button.style.transform = 'scale(0.95)'; // Efek klik\n    });\n    button.addEventListener('mouseup', function() {\n      button.style.transform = 'scale(1)'; // Kembali ke ukuran semula\n    });\n  })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "135c57bf40d6b3b2"
+            ]
+        ]
+    },
+    {
+        "id": "58ccdbe0667da46d",
+        "type": "function",
+        "z": "1575464466fc78c7",
+        "name": "function 30",
+        "func": "// Mengambil nilai input dari msg.payload (misalnya nilai yang diberikan oleh input number1)\nlet number1 = msg.payload || 0; // Jika tidak ada nilai, gunakan 0\n\n// Menyimpan nilai number1 sebagai threshold1 di global context\nglobal.set(\"threshold1\", number1);\n\n// Menambahkan informasi untuk debugging\nmsg.threshold1 = number1; // Menyertakan nilai threshold1 dalam pesan\n\n// Kembalikan pesan\nreturn msg; ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "e0c82c9a6d51ba21"
+            ]
+        ]
+    },
+    {
+        "id": "e0c82c9a6d51ba21",
+        "type": "link out",
+        "z": "1575464466fc78c7",
+        "name": "thershold1",
+        "mode": "link",
+        "links": [],
+        "x": 465,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9c3d4caf494392c3",
+        "type": "function",
+        "z": "1575464466fc78c7",
+        "name": "function 36",
+        "func": "// Mengambil nilai dari msg.payload yang dikirimkan oleh UI Switch\nlet switchValue = msg.payload; // Nilai true/false dari UI Switch\n\n// Menyimpan nilai switchValue ke dalam global context sebagai mode1\nglobal.set(\"mode1\", switchValue);\n\n// Mengembalikan msg untuk diteruskan\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "572927ac05aa8858",
+        "type": "function",
+        "z": "1575464466fc78c7",
+        "name": "function 37",
+        "func": "// Mengambil nilai dari msg.payload yang dikirimkan oleh UI Switch\nlet switchValue2 = msg.payload; // Nilai true/false dari UI Switch\n\n// Menyimpan nilai switchValue ke dalam global context sebagai mode1\nglobal.set(\"mode2\", switchValue2);\n\n// Mengembalikan msg untuk diteruskan\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5be595224eca9a8",
+        "type": "mqtt out",
+        "z": "1575464466fc78c7",
+        "name": "",
+        "topic": "airbaku/delay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1f90e14f92c8adab",
+        "x": 970,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "8e5cde36da677110",
+        "type": "function",
+        "z": "1575464466fc78c7",
+        "name": "function 42",
+        "func": "// Mengambil nilai input dari msg.payload (misalnya nilai yang diberikan oleh input number1)\nlet number1 = msg.payload || 0; // Jika tidak ada nilai, gunakan 0\n\n// Menyimpan nilai number1 sebagai threshold1 di global context\nglobal.set(\"threshold1\", number1);\n\n// Menambahkan informasi untuk debugging\nmsg.threshold1 = number1; // Menyertakan nilai threshold1 dalam pesan\n\n// Kembalikan pesan\nreturn msg; ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 140,
+        "wires": [
+            [
+                "a4b5704398ee7104"
+            ]
+        ]
+    },
+    {
+        "id": "a4b5704398ee7104",
+        "type": "link out",
+        "z": "1575464466fc78c7",
+        "name": "thershold1",
+        "mode": "link",
+        "links": [],
+        "x": 1045,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4ee8f84d3a515d61",
+        "type": "ui_template",
+        "z": "1575464466fc78c7",
+        "group": "85e3da5ffb6a1005",
+        "name": "SettingAirKotor",
+        "order": 2,
+        "width": 12,
+        "height": 4,
+        "format": "<div>\n  <h2 style=\"text-align: center; padding-bottom: 20px;\">Setting Air Kotor</h2>\n</div>\n<div\n  style=\"padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 4px 4px 10px rgba(0, 0, 0.1, 0.1); text-align: center;\">\n  <h2 style=\"margin-bottom: 20px; color: #333; font-family: arial; font-size: 18px;\">Set Delay Time</h2>\n  <div style=\"display: flex; align-items: center; justify-content: center;\">\n    <input\n      id=\"delayInput2\"\n      type=\"number\"\n      placeholder=\"Enter delay in second\"\n      style=\"flex: 1; padding: 10px 15px; font-size: 16px; border: 2px solid #ccc; border-radius: 8px; margin-right: 10px; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);\"\n    >\n    <button\n      id=\"resetButton2\"\n      style=\"background-color: #0B2F9F; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.2s;\"\n    >\n      Reset\n    </button>\n  </div>\n</div>\n\n<script>\n  (function(scope) {\n    document.getElementById('resetButton2').addEventListener('click', function() {\n      const delayValue = document.getElementById('delayInput2').value;\n      if (delayValue !== '') {\n        scope.send({ payload: Number(delayValue) });\n        document.getElementById('delayInput2').value = ''; // Reset input field\n        alert('Delay set successfully!');\n      } else {\n        alert('Please enter a delay value.');\n      }\n    });\n\n    // Animasi hover pada tombol\n    const button = document.getElementById('resetButton2');\n    button.addEventListener('mouseover', function() {\n      button.style.backgroundColor = '#0056b3'; // Warna lebih gelap saat hover\n    });\n    button.addEventListener('mouseout', function() {\n      button.style.backgroundColor = '#0B2F9F'; // Warna kembali normal\n    });\n    button.addEventListener('mousedown', function() {\n      button.style.transform = 'scale(0.95)'; // Efek klik\n    });\n    button.addEventListener('mouseup', function() {\n      button.style.transform = 'scale(1)'; // Kembali ke ukuran semula\n    });\n  })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 760,
+        "y": 80,
+        "wires": [
+            [
+                "e5be595224eca9a8"
+            ]
+        ]
+    },
+    {
+        "id": "41f52cc250b914d9",
+        "type": "ui_template",
+        "z": "1575464466fc78c7",
+        "group": "85e3da5ffb6a1005",
+        "name": "K1",
+        "order": 4,
+        "width": 13,
+        "height": 5,
+        "format": "<div>\n  <h2 style=\"text-align: center; padding-bottom: 20px;\">Setting Ketinggian Air Bersih</h2>\n</div>\n<div\n  style=\"padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 4px 4px 10px rgba(0, 0, 0.1, 0.1); text-align: center;\">\n  <h2 style=\"margin-bottom: 20px; color: #333; font-family: arial; font-size: 18px;\">Tinggi Air Bersih</h2>\n  <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 20px;\">\n    <!-- Button for Minus -->\n    <button\n      id=\"decreaseButton\"\n      style=\"background-color: #11D086; color: white; border: none; padding: 10px 15px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; margin-right: 10px;\">\n      -\n    </button>\n    <!-- Input ketinggian air -->\n    <input\n      id=\"heightInput\"\n      type=\"number\"\n      value=\"0\"\n      style=\"padding: 10px 15px; font-size: 16px; border: 2px solid #ccc; border-radius: 8px; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center; width: 100px;\"\n    >\n    <!-- Button for Plus -->\n    <button\n      id=\"increaseButton\"\n      style=\"background-color: #11D086; color: white; border: none; padding: 10px 15px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; margin-left: 10px;\">\n      +\n    </button>\n  </div>\n</div>\n\n<!-- CSS for button hover and click effects -->\n<style>\n  button:hover {\n    background-color: #4CAF50;\n    /* Background color on hover */\n  }\n\n  button:active {\n    transform: scale(0.95);\n    /* Button scale effect on click */\n  }\n</style>\n\n<script>\n  (function(scope) {\n    function sendData(height) {\n      scope.send({payload: {height}});\n    }\n\n    document.getElementById('decreaseButton').addEventListener('click', function() {\n      const heightInput = document.getElementById('heightInput');\n      let currentHeight = Number(heightInput.value);\n\n      if (currentHeight > 0) {\n        currentHeight -= 1;\n        heightInput.value = currentHeight;\n        sendData(currentHeight);\n      }\n    });\n\n        document.getElementById('increaseButton').addEventListener('click', function() {\n        const heightInput = document.getElementById('heightInput');\n        let currentHeight = Number(heightInput.value);\n        \n        currentHeight += 1;\n        heightInput.value = currentHeight;\n        sendData(currentHeight);\n        });\n\n        document.getElementById('heightInput').addEventListener('input', function() {\n          const currentHeight = Number(this.value);\n          sendData(currentHeight);\n        });\n  })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "58ccdbe0667da46d"
+            ]
+        ]
+    },
+    {
+        "id": "348db251fb9b592a",
+        "type": "ui_template",
+        "z": "1575464466fc78c7",
+        "group": "85e3da5ffb6a1005",
+        "name": "K2",
+        "order": 5,
+        "width": 12,
+        "height": 5,
+        "format": "<div>\n  <h2 style=\"text-align: center; padding-bottom: 20px;\">Setting Ketinggian Air Bersih</h2>\n</div>\n<div\n  style=\"padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 4px 4px 10px rgba(0, 0, 0.1, 0.1); text-align: center;\">\n  <h2 style=\"margin-bottom: 20px; color: #333; font-family: arial; font-size: 18px;\">Tinggi Air Bersih</h2>\n  <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 20px;\">\n    <!-- Button for Minus -->\n    <button\n      id=\"decreaseHeightButton\"\n      style=\"background-color: #11D086; color: white; border: none; padding: 10px 15px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; margin-right: 10px;\">\n      -\n    </button>\n    <!-- Input ketinggian air -->\n    <input\n      id=\"waterHeightInput\"\n      type=\"number\"\n      value=\"0\"\n      style=\"padding: 10px 15px; font-size: 16px; border: 2px solid #ccc; border-radius: 8px; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center; width: 100px;\"\n    >\n    <!-- Button for Plus -->\n    <button\n      id=\"increaseHeightButton\"\n      style=\"background-color: #11D086; color: white; border: none; padding: 10px 15px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; margin-left: 10px;\">\n      +\n    </button>\n  </div>\n</div>\n\n<!-- CSS for button hover and click effects -->\n<style>\n  button:hover {\n    background-color: #4CAF50;\n    /* Background color on hover */\n  }\n\n  button:active {\n    transform: scale(0.95);\n    /* Button scale effect on click */\n  }\n</style>\n\n<script>\n  (function(scope) {\n    function sendData(height) {\n      scope.send({payload: {height}});\n    }\n\n    document.getElementById('decreaseHeightButton').addEventListener('click', function() {\n      const heightInput = document.getElementById('waterHeightInput');\n      let currentHeight = Number(heightInput.value);\n\n      if (currentHeight > 0) {\n        currentHeight -= 1;\n        heightInput.value = currentHeight;\n        sendData(currentHeight);\n      }\n    });\n\n        document.getElementById('increaseHeightButton').addEventListener('click', function() {\n        const heightInput = document.getElementById('waterHeightInput');\n        let currentHeight = Number(heightInput.value);\n        \n        currentHeight += 1;\n        heightInput.value = currentHeight;\n        sendData(currentHeight);\n        });\n\n        document.getElementById('waterHeightInput').addEventListener('input', function() {\n          const currentHeight = Number(this.value);\n          sendData(currentHeight);\n        });\n  })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 140,
+        "wires": [
+            [
+                "8e5cde36da677110"
+            ]
+        ]
+    },
+    {
+        "id": "246b5fe87d7cf703",
+        "type": "ui_template",
+        "z": "1575464466fc78c7",
+        "group": "85e3da5ffb6a1005",
+        "name": "M1",
+        "order": 14,
+        "width": 13,
+        "height": 5,
+        "format": "<div>\n  <h2 style=\"text-align: center; padding-bottom: 20px;\">Switch On/Off</h2>\n</div>\n<div\n  style=\"padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 4px 4px 10px rgba(0, 0, 0.1, 0.1); text-align: center;\">\n  <h2 style=\"margin-bottom: 20px; color: #333; font-family: arial; font-size: 18px;\">Mode 1\n  </h2>\n  <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 20px;\">\n    <!-- Custom On/Off Switch -->\n    <label class=\"switch\">\n      <input type=\"checkbox\" id=\"switchControl\">\n      <span class=\"slider\"></span>\n    </label>\n    <span id=\"statusText\" style=\"margin-left: 20px; font-size: 16px; font-weight: bold;\">Off</span>\n  </div>\n</div>\n\n<!-- CSS for the switch design -->\n<style>\n  .switch {\n    position: relative;\n    display: inline-block;\n    width: 60px;\n    height: 34px;\n  }\n\n  .switch input {\n    opacity: 0;\n    width: 0;\n    height: 0;\n  }\n\n  .slider {\n    position: absolute;\n    cursor: pointer;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background-color: #ccc;\n    transition: 0.4s;\n    border-radius: 34px;\n  }\n\n  .slider:before {\n    position: absolute;\n    content: \"\";\n    height: 26px;\n    width: 26px;\n    border-radius: 50%;\n    left: 4px;\n    bottom: 4px;\n    background-color: white;\n    transition: 0.4s;\n  }\n\n  input:checked+.slider {\n    background-color: #4CAF50;\n    /* Green color when on */\n  }\n\n  input:checked+.slider:before {\n    transform: translateX(26px);\n    /* Move the circle to the right */\n  }\n\n  /* Optional: Add a hover effect */\n  .slider:hover {\n    background-color: #A6AEBF;\n    /* Slightly lighter grey on hover */\n  }\n</style>\n\n<script>\n  (function(scope) {\n    const switchControl = document.getElementById('switchControl');\n    const statusText = document.getElementById('statusText');\n\n    switchControl.addEventListener('change', function() {\n      const state = this.checked ? 'ON' : 'OFF';\n      statusText.textContent = state;\n      scope.send({payload: {state}});\n    });\n  })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 450,
+        "y": 260,
+        "wires": [
+            [
+                "9c3d4caf494392c3"
+            ]
+        ]
+    },
+    {
+        "id": "4f0de068974051a7",
+        "type": "ui_template",
+        "z": "1575464466fc78c7",
+        "group": "85e3da5ffb6a1005",
+        "name": "M2",
+        "order": 7,
+        "width": 12,
+        "height": 5,
+        "format": "<div>\n    <h2 style=\"text-align: center; padding-bottom: 20px;\">Switch On/Off</h2>\n</div>\n<div\n    style=\"padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 4px 4px 10px rgba(0, 0, 0.1, 0.1); text-align: center;\">\n    <h2 style=\"margin-bottom: 20px; color: #333; font-family: arial; font-size: 18px;\"> Mode 2\n    </h2>\n    <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 20px;\">\n        <!-- Custom On/Off Switch -->\n        <label class=\"switch\">\n      <input type=\"checkbox\" id=\"toggleSwitchControl\">\n      <span class=\"slider\"></span>\n    </label>\n        <span id=\"switchStatusText\" style=\"margin-left: 20px; font-size: 16px; font-weight: bold;\">Off</span>\n    </div>\n</div>\n\n<!-- CSS for the switch design -->\n<style>\n    .switch {\n        position: relative;\n        display: inline-block;\n        width: 60px;\n        height: 34px;\n    }\n\n    .switch input {\n        opacity: 0;\n        width: 0;\n        height: 0;\n    }\n\n    .slider {\n        position: absolute;\n        cursor: pointer;\n        top: 0;\n        left: 0;\n        right: 0;\n        bottom: 0;\n        background-color: #ccc;\n        transition: 0.4s;\n        border-radius: 34px;\n    }\n\n    .slider:before {\n        position: absolute;\n        content: \"\";\n        height: 26px;\n        width: 26px;\n        border-radius: 50%;\n        left: 4px;\n        bottom: 4px;\n        background-color: white;\n        transition: 0.4s;\n    }\n\n    input:checked+.slider {\n        background-color: #4CAF50;\n        /* Green color when on */\n    }\n\n    input:checked+.slider:before {\n        transform: translateX(26px);\n        /* Move the circle to the right */\n    }\n\n    /* Optional: Add a hover effect */\n    .slider:hover {\n        background-color: #A6AEBF;\n        /* Slightly lighter grey on hover */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        const toggleSwitchControl = document.getElementById('toggleSwitchControl');\n        const switchStatusText = document.getElementById('switchStatusText');\n        \n    toggleSwitchControl.addEventListener('change', function() {\n        const state = this.checked ? 'ON' : 'OFF';\n        switchStatusText.textContent = state;\n        scope.send({payload: {state}});\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 450,
+        "y": 320,
+        "wires": [
+            [
+                "572927ac05aa8858"
+            ]
+        ]
+    },
+    {
+        "id": "41b14e954bf18e12",
+        "type": "mqtt out",
+        "z": "1575464466fc78c7",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e0f204b812109e2d",
+        "x": 710,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "c0eabc70b674aaa0",
+        "type": "ui_template",
+        "z": "1575464466fc78c7",
+        "group": "85e3da5ffb6a1005",
+        "name": "Reset Air Bersih",
+        "order": 20,
+        "width": 13,
+        "height": 2,
+        "format": "<script src=\"https://cdn.jsdelivr.net/npm/mqtt/dist/mqtt.min.js\"></script>\n\n<div style=\"width: 100%;\">\n    <button style=\"padding: 15px 30px; font-size: 18px; background-color: #FF4D4D; color: white; border: none; border-radius: 10px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 0px auto; width: 100%\">Reset Air Bersih</button>\n</div>\n\n<script>\n    const client = mqtt.connect('url');\n\n    client.on('connect', function () {\n        console.log('Connected to MQTT Broker');\n    });\n\n    document.getElementById('resetButton').addEvenListener('click', function () {\n        const payload = '1';\n        const topic = 'air-bersih/reset';\n\n        client.publish(topic,payload, function() {\n            console.log('Payload sent: ' + payload);\n        });\n    });\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 440,
+        "y": 520,
+        "wires": [
+            [
+                "41b14e954bf18e12"
+            ]
+        ]
+    },
+    {
+        "id": "f1bf9c48d2915d19",
+        "type": "ui_template",
+        "z": "1575464466fc78c7",
+        "group": "85e3da5ffb6a1005",
+        "name": "Reset Air Kotor",
+        "order": 9,
+        "width": 12,
+        "height": 2,
+        "format": "<script src=\"https://cdn.jsdelivr.net/npm/mqtt/dist/mqtt.min.js\"></script>\n\n<div style=\"width: 100%;\">\n    <button style=\"padding: 15px 30px; font-size: 18px; background-color: #FF4D4D; color: white; border: none; border-radius: 10px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 0px auto; width: 100%\">Reset Air Bersih</button>\n</div>\n\n<script>\n    const client = mqtt.connect('url');\n\n    client.on('connect', function () {\n        console.log('Connected to MQTT Broker');\n    });\n\n    document.getElementById('resetButtonAirKotor').addEvenListener('click', function () {\n        const payload = '1';\n        const topic = 'air-kotor/reset';\n\n        client.publish(topic,payload, function() {\n            console.log('Payload sent: ' + payload);\n        });\n    });\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 440,
+        "y": 600,
+        "wires": [
+            [
+                "4efbee9fa2d488df"
+            ]
+        ]
+    },
+    {
+        "id": "4efbee9fa2d488df",
+        "type": "mqtt out",
+        "z": "1575464466fc78c7",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e0f204b812109e2d",
+        "x": 710,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "5ebbe735aee38bb8",
+        "type": "ui_template",
+        "z": "1575464466fc78c7",
+        "group": "85e3da5ffb6a1005",
+        "name": "Turbidity",
+        "order": 6,
+        "width": 13,
+        "height": 5,
+        "format": "<div>\n  <h2 style=\"text-align: center; padding-bottom: 20px;\">Setting kekeruhan air bersih</h2>\n</div>\n<div\n  style=\"padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 4px 4px 10px rgba(0, 0, 0.1, 0.1); text-align: center;\">\n  <h2 style=\"margin-bottom: 20px; color: #333; font-family: arial; font-size: 18px;\">Batas kekeruhan</h2>\n  <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 20px;\">\n    <!-- Button for Minus -->\n    <button\n      id=\"decreaseButton\"\n      style=\"background-color: #11D086; color: white; border: none; padding: 10px 15px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; margin-right: 10px;\">\n      -\n    </button>\n    <!-- Input ketinggian air -->\n    <input\n      id=\"heightInput\"\n      type=\"number\"\n      value=\"0\"\n      style=\"padding: 10px 15px; font-size: 16px; border: 2px solid #ccc; border-radius: 8px; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center; width: 100px;\"\n    >\n    <!-- Button for Plus -->\n    <button\n      id=\"increaseButton\"\n      style=\"background-color: #11D086; color: white; border: none; padding: 10px 15px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; margin-left: 10px;\">\n      +\n    </button>\n  </div>\n</div>\n\n<!-- CSS for button hover and click effects -->\n<style>\n  button:hover {\n    background-color: #4CAF50;\n    /* Background color on hover */\n  }\n\n  button:active {\n    transform: scale(0.95);\n    /* Button scale effect on click */\n  }\n</style>\n\n<script>\n  (function(scope) {\n    function sendData(height) {\n      scope.send({payload: {height}});\n    }\n\n    document.getElementById('decreaseButton').addEventListener('click', function() {\n      const heightInput = document.getElementById('heightInput');\n      let currentHeight = Number(heightInput.value);\n\n      if (currentHeight > 0) {\n        currentHeight -= 1;\n        heightInput.value = currentHeight;\n        sendData(currentHeight);\n      }\n    });\n\n        document.getElementById('increaseButton').addEventListener('click', function() {\n        const heightInput = document.getElementById('heightInput');\n        let currentHeight = Number(heightInput.value);\n        \n        currentHeight += 1;\n        heightInput.value = currentHeight;\n        sendData(currentHeight);\n        });\n\n        document.getElementById('heightInput').addEventListener('input', function() {\n          const currentHeight = Number(this.value);\n          sendData(currentHeight);\n        });\n  })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "873ae1a8e12dbc8e",
+        "type": "ui_template",
+        "z": "1575464466fc78c7",
+        "group": "85e3da5ffb6a1005",
+        "name": "PH",
+        "order": 8,
+        "width": 13,
+        "height": 5,
+        "format": "<div>\n  <h2 style=\"text-align: center; padding-bottom: 20px;\">Setting Ketinggian Air Bersih</h2>\n</div>\n<div\n  style=\"padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 4px 4px 10px rgba(0, 0, 0.1, 0.1); text-align: center;\">\n  <h2 style=\"margin-bottom: 20px; color: #333; font-family: arial; font-size: 18px;\">Batas Ph</h2>\n  <div style=\"display: flex; align-items: center; justify-content: center; margin-bottom: 20px;\">\n    <!-- Button for Minus -->\n    <button\n      id=\"decreaseButton\"\n      style=\"background-color: #11D086; color: white; border: none; padding: 10px 15px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; margin-right: 10px;\">\n      -\n    </button>\n    <!-- Input ketinggian air -->\n    <input\n      id=\"heightInput\"\n      type=\"number\"\n      value=\"0\"\n      style=\"padding: 10px 15px; font-size: 16px; border: 2px solid #ccc; border-radius: 8px; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center; width: 100px;\"\n    >\n    <!-- Button for Plus -->\n    <button\n      id=\"increaseButton\"\n      style=\"background-color: #11D086; color: white; border: none; padding: 10px 15px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; margin-left: 10px;\">\n      +\n    </button>\n  </div>\n</div>\n\n<!-- CSS for button hover and click effects -->\n<style>\n  button:hover {\n    background-color: #4CAF50;\n    /* Background color on hover */\n  }\n\n  button:active {\n    transform: scale(0.95);\n    /* Button scale effect on click */\n  }\n</style>\n\n<script>\n  (function(scope) {\n    function sendData(height) {\n      scope.send({payload: {height}});\n    }\n\n    document.getElementById('decreaseButton').addEventListener('click', function() {\n      const heightInput = document.getElementById('heightInput');\n      let currentHeight = Number(heightInput.value);\n\n      if (currentHeight > 0) {\n        currentHeight -= 1;\n        heightInput.value = currentHeight;\n        sendData(currentHeight);\n      }\n    });\n\n        document.getElementById('increaseButton').addEventListener('click', function() {\n        const heightInput = document.getElementById('heightInput');\n        let currentHeight = Number(heightInput.value);\n        \n        currentHeight += 1;\n        heightInput.value = currentHeight;\n        sendData(currentHeight);\n        });\n\n        document.getElementById('heightInput').addEventListener('input', function() {\n          const currentHeight = Number(this.value);\n          sendData(currentHeight);\n        });\n  })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    }
+]

@@ -1,0 +1,11 @@
+Langkah-langkah menjalankan program :
+1. pastikan node-red sudah ter install untuk mengintal 
+   node-red dan node.js Link saya taruh di bagian awal
+2. kemudian jalankan node-red dengan perintah buka CMD
+   Kemudian ketik Node-red
+3  Setelah itu install beberapa library yang di butuhkan
+   dengan cara klik di sebalah kanan titik 3 kemudian pilih manage
+   pallet lalu install beberapa library yang di butuhkan
+4. kemudian untuk meng-uploud meng uploud kode pilih import
+   di titik tiga sebelah kanan kemudian pilih file Node-red
+5. lalu deploy silahkan mencoba
