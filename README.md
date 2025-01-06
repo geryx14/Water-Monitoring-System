@@ -42,10 +42,10 @@ Ensure the following libraries are installed in the Arduino IDE or PlatformIO:
 3. **Ultrasonic sensor (URM-09)** 
    -For HC-SR04 ultrasonic sensor URM-09
    - Install via GitHub:  
-     [[Ultrasonic](https://github.com/JRodrigoTech/Ultrasonic-HC-SR04](https://github.com/DFRobot/DFRobot_URM09))
-     Search for "Adafruit Sensor"
      ```
-
+       [[Ultrasonic](https://github.com/JRodrigoTech/Ultrasonic-HC-SR04](https://github.com/DFRobot/DFRobot_URM09))
+     
+     ```
 ### **Raspberry Pi Dependencies**
 Install the following libraries or packages on your Raspberry Pi:
 
